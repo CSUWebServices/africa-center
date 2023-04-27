@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".mobile-second-menu").mmenu({dragClose:{close:!0},extensions:["effect-menu-slide","effect-panels-slide-100","effect-listitems-slide","pageshadow"],navbars:[!0,{position:"bottom",content:["<p class='swipe'>Swipe to Close</p>"]}]});var e=$(".mobile-second-menu").data("mmenu");$("#my-button").click(function(){e.close()})});

@@ -1,0 +1,135 @@
+.subsite-header-wrapper {
+	display: flex;
+}
+
+.subsite-title-wrapper {
+	display: flex;
+	flex-shrink: 0;
+
+	@media #{$medium} {
+		display: none;
+	}
+
+	.subsite-title {
+		@include proxlight;
+		margin: 0;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: .1rem;
+		background: darken($csu, 5%);
+		color: white;
+		display: flex;
+		justify-content: center;
+		transition: all 0.2s;
+
+		&:hover, &:focus {
+			background: darken($csu, 7.5%);
+			transition: all 0.2s;
+		}
+
+		.subsite-homepage-link {
+			text-decoration: none;
+			color: white;
+			padding: 0.5rem 1rem;
+		}
+	}
+}
+
+
+//********** Navigation styles in _menus.scss **********
+#open-secondary-nav {
+	width: 100%;
+	background: white;
+	color: $csu;
+	display: none;
+
+	@media #{$medium} {
+		display: flex;
+	}
+
+	&:hover, &:focus {
+		transform: none;
+	}
+
+	h2 {
+		font-size: 1em;
+		margin: 0;
+	}
+}
+
+.subsite-nav-icon {
+	display: flex;
+	flex-direction: column;
+	width: 1.5rem;
+	cursor: pointer;
+	margin-right: 0.5rem;
+
+	span {
+		background: $csu;
+		border-radius: 10px;
+		height: 2px;
+		margin: 2px 0;
+		transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+		&:nth-of-type(1) {
+			width: 50%;
+		}
+
+		&:nth-of-type(2) {
+			width: 100%;
+		}
+
+		&:nth-of-type(3) {
+			width: 75%;
+		}
+	}
+}
+
+.mm-opened {
+
+	.subsite-nav-icon {
+
+		span {
+
+			&:nth-of-type(1) {
+				transform-origin: bottom;
+				transform: rotatez(45deg) translate(14px,0px)
+			}
+
+			&:nth-of-type(2) {
+				transform-origin: top;
+				transform: rotatez(-45deg)
+			}
+
+			&:nth-of-type(3) {
+				transform-origin: bottom;
+				width: 50%;
+				transform: translate(1px,-11px) rotatez(45deg);
+			}
+		}
+	}
+}
+
+
+// input[type="checkbox"] {
+// 	display: none;
+// }
+
+
+// input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+// 	transform-origin: bottom;
+// 	transform: rotatez(45deg) translate(8px,0px)
+// }
+
+
+// input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+// 	transform-origin: top;
+// 	transform: rotatez(-45deg)
+// }
+
+
+// input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+// 	transform-origin: bottom;
+// 	width: 50%;
+// 	transform: translate(30px,-11px) rotatez(45deg);
+// }

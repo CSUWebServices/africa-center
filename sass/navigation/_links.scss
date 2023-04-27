@@ -1,0 +1,68 @@
+a {
+	color: $color__link;
+	text-decoration-skip-ink: none;
+	text-decoration-thickness: 0.5ch;
+	text-decoration-color: $alfalfa;
+	text-underline-offset: -0.33ch;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+		text-underline-offset: -2.3ch;
+	    text-decoration-thickness: 1.8ch;
+	    transition: all 0.2s;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+
+	&.button, &.button-secondary {
+		color: $csu;
+
+		&:hover, &:focus {
+			color: $csu;
+		}
+
+		&:focus-visible {
+			outline: 2px solid $aggie;
+		}
+	}
+}
+
+// Safari only
+@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+	a {
+		text-decoration-thickness: 3px!important;
+		text-underline-offset: 3px!important;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-underline-offset: 3px!important;
+		    text-decoration-thickness: 3px!important;
+		    transition: none;
+		}
+	}
+} }
+
+// Firefox only
+@-moz-document url-prefix() {
+	a {
+		text-underline-offset: -.15ch;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-underline-offset: -1.3ch;
+			text-decoration-thickness: 1.8ch;
+		}
+	}
+}

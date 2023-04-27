@@ -1,0 +1,56 @@
+.wp-block-staff {
+	padding: 3rem 0;
+
+	.section-title {
+		margin-top: 0;
+		margin-bottom: 1.5em;
+	}
+}
+
+.staff-list {
+
+	&.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-gap: 3rem;
+
+		@media #{$medium} {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media #{$small} {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+.staff-card {
+
+	img {
+		border-radius: 50%;
+		width: calc(200% / 3);
+	}
+
+	h3, p {
+		margin: 0;
+	}
+
+	.staff-department {
+		font-family: 'industry-light';
+		text-transform: uppercase;
+		margin: 0.5em 0;
+	}
+
+	.staff-name {
+		margin-top: 0.5em;
+	}
+
+	.job-title {
+		font-style: italic;
+	}
+
+	.staff-phone, .staff-email {
+		display: block;
+	}
+}

@@ -1,0 +1,1 @@
+!function(i){i(document).ready((function(){i(".passions-grid").gridtab({grid:4,contentPadding:0,borderWidth:2,config:{layout:"grid",keepOpen:!1,showClose:!1,showArrows:!1,scrollToTab:!1,speed:250},responsive:[{breakpoint:800,settings:{grid:2}}]})})),i(".passions-grid dt").keypress((function(r){var s;if(13==r.which)return i(this).click(),!1}))}(jQuery);

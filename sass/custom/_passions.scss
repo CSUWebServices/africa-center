@@ -1,0 +1,62 @@
+//********** Passions Archive **********
+
+
+//********** Passions Single **********
+.single-passions {
+	// Page title
+	.entry-header {
+		// Page title without background image
+		// .entry-header-wrapper {
+		// 	display: flex;
+		// 	align-items: center;
+		// 	justify-content: center;
+
+		// 	.passion-title {
+		// 		display: flex;
+		// 		align-items: center;
+		// 		font-family: 'industry-book', sans-serif;
+		// 		font-size: 2rem;
+
+		// 		@media #{$small} {
+		// 			flex-direction: column;
+		// 			font-size: 1.5rem;
+		// 		}
+
+		// 		#passion-select {
+		// 			background: none;
+		// 			border: none;
+		// 			outline: none;
+		// 			display: block;
+		// 			margin: 0 0.5rem;
+		// 			text-decoration: underline;
+		// 			font-family: 'industry-book', sans-serif;
+		// 			font-size: 2rem;
+
+		// 			@media #{$small} {
+		// 				font-size: 1.5rem;
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		// Page title with background image
+		// &.post-image {
+		// 	background-size: cover;
+		// 	background-attachment: fixed;
+
+		// 	.entry-header-wrapper {
+		// 		min-height: calc(100vh/3);
+		// 		background: rgba(black, 0.6);
+		// 		padding: 1.5rem 1rem;
+		// 	}
+
+		// 	.passion-title {
+		// 		color: white;
+
+		// 		#passion-select {
+		// 			color: white;
+		// 		}
+		// 	}
+		// }
+	}
+}

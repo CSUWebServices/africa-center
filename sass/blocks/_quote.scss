@@ -1,0 +1,18 @@
+.wp-block-quote {
+	margin: 0 auto;
+	font-size: 1.3em;
+
+	p {
+		margin-bottom: 0.5em;
+		color: lighten(black, 30%);
+		font-family: helvetica;
+	}
+
+	cite {
+		color: $csu;
+	}
+
+	p, cite {
+		max-width: 700px;
+	}
+}

@@ -1,0 +1,17 @@
+.wp-block-buttons {
+
+	.wp-block-button {
+
+		.wp-block-button__link {
+			@include button-style;
+		}
+	}
+}
+
+// Center buttons if they are in a column
+.wp-block-columns {
+
+	.wp-block-buttons {
+		// text-align: center;
+	}
+}

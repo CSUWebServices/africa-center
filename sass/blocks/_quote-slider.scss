@@ -1,0 +1,66 @@
+.quote-slider-wrapper {
+	// Sets a default background color. Will be overridden by user's choice
+	background-color: $aggie;
+	padding-bottom: 2.3rem;
+}
+
+.quote-slider {
+
+	.flickity-slider {
+		display: flex;
+		align-items: center;
+	}
+
+	.quote-slide {
+		width: 100%;
+		max-width: none!important;
+
+		@media #{$medium} {
+
+			p {
+				padding: 0 1em;
+			}
+		}
+
+		.quote-container {
+			@include inner(900px);
+		}
+
+		p, cite {
+			color: white;
+		}
+	}
+
+	.flickity-page-dots .dot {
+		width: 0.75rem;
+		height: 0.75rem;
+		opacity: 1;
+		background: transparent;
+		border: 1px solid white;
+	}
+
+	.flickity-page-dots .dot.is-selected {
+		background: white;
+	}
+
+	.flickity-button {
+		background: transparent;
+
+		&:hover, &:focus {
+			background: none;
+		}
+	}
+	/* big previous & next buttons */
+	.flickity-prev-next-button {
+		width: 4rem;
+		height: 4rem;
+	}
+	/* icon color */
+	.flickity-button-icon {
+		fill: white;
+	}
+	/* hide disabled button */
+	.flickity-button:disabled {
+		display: none;
+	}
+}

@@ -1,0 +1,52 @@
+// .alignwide {
+//     width: 80vw;
+//     overflow-x: hidden;
+
+//     @media #{$medium} {
+
+//     }
+// }
+
+.alignfull {
+	@include fullwidth;
+}
+
+.alignfull img {
+    width: 100vw;
+}
+
+.no-top-margin {
+	margin-top: 0;
+
+	// * {
+	// 	margin-top: 0;
+	// }
+}
+
+.no-bottom-margin {
+	margin-bottom: 0;
+
+	// * {
+	// 	margin-bottom: 0;
+	// }
+}
+
+.no-top-padding {
+	padding-top: 0;
+
+	// * {
+	// 	padding-top: 0;
+	// }
+}
+
+.no-bottom-padding {
+	padding-bottom: 0;
+
+	// * {
+	// 	padding-bottom: 0;
+	// }
+}
+
+.section-padding {
+	@include section-padding;
+}

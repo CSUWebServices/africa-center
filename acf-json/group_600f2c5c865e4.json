@@ -1,0 +1,110 @@
+{
+    "key": "group_600f2c5c865e4",
+    "title": "Quote Slider",
+    "fields": [
+        {
+            "key": "field_600f31453c2e5",
+            "label": "Color",
+            "name": "color",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#D9782D": "Aggie Orange",
+                "#1E4D2B": "CSU Green",
+                "#163b22": "CSU Green Darker",
+                "#105456": "Slate",
+                "#CC5430": "Canyon"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "#D9782D : Aggie Orange",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_600f37abdd77d",
+            "label": "Quote",
+            "name": "quote_slider",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 6,
+            "layout": "block",
+            "button_label": "Add Quote",
+            "sub_fields": [
+                {
+                    "key": "field_600f37c9dd77e",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_600f37dedd77f",
+                    "label": "Citation",
+                    "name": "citation",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/quote-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1626727288
+}

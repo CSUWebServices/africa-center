@@ -1,0 +1,177 @@
+{
+    "key": "group_586e8aba6c416",
+    "title": "CSU Logo & Unit Identifier",
+    "fields": [
+        {
+            "key": "field_586e8aeadb0e1",
+            "label": "Logo Size",
+            "name": "logo_size",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "small": "Small",
+                "medium": "Medium",
+                "large": "Large"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_586e8ccbd9aad",
+            "label": "Unit Identifier Size",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_586e8c6fd9aaa",
+            "label": "Desktop",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_586e8c00d9aa7",
+            "label": "Unit Identifier Size - Desktop",
+            "name": "ui_desktop",
+            "type": "number",
+            "instructions": "Enter a value between 14 and 19.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": 14,
+            "max": 19,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px"
+        },
+        {
+            "key": "field_586e8cacd9aab",
+            "label": "Tablet",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_586e974bf5a5b",
+            "label": "Unit Identifier Size - Tablet",
+            "name": "ui_tablet",
+            "type": "number",
+            "instructions": "Enter a value between 14 and 19.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": 14,
+            "max": 19,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px"
+        },
+        {
+            "key": "field_586e8cb5d9aac",
+            "label": "Mobile",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_586e975ff5a5c",
+            "label": "Unit Identifier Size - Mobile",
+            "name": "ui_mobile",
+            "type": "number",
+            "instructions": "Enter a value between 14 and 19.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": 14,
+            "max": 19,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "design-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1518819903
+}

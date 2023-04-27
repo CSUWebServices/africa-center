@@ -1,0 +1,52 @@
+{
+    "key": "group_586ebda278434",
+    "title": "Header",
+    "fields": [
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "default": "Default",
+                "fixed": "Fixed",
+                "scroll": "Show on scroll up"
+            },
+            "default_value": [
+                "default"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_586ebdab651d9",
+            "label": "Header Style",
+            "name": "header_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "design-settings"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1483724656
+}

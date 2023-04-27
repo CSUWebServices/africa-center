@@ -1,0 +1,55 @@
+.link-blocks {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	@media #{$medium} {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media #{$small} {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media #{$xs} {
+		grid-template-columns: repeat(1, 1fr);
+	}	
+
+	.link-block {
+		display: flex;
+	    justify-content: center;
+	    align-items: flex-end;
+		width: 100%;
+		padding-top: 56.25%;
+		background-size: cover;
+		color: $csu;
+		font-size: 1.2em;
+		font-family: 'industry-demi';
+		line-height: 1.2;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		span {
+			background: $color__background-button;
+			padding: .6em 0.5em .4em;
+			text-align: center;
+			width: 80%;
+			transition: all 0.2s;
+		}
+
+		&:hover, &:focus {
+
+			span {
+				transform: translate3d(0, -0.25em, 0);
+				transition: all 0.2s;
+			}
+		}
+	}
+
+	&.alignfull {
+
+		.link-block {
+			height: 250px;
+		}
+	}
+}

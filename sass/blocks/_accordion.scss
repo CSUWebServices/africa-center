@@ -1,0 +1,48 @@
+.accordion {
+	@include section-margin;
+
+	.accordion-title {
+		background: $csu;
+		color: white;
+		border-left: 0.25rem solid $csu;
+		font-size: 1.2em;
+		margin: 0;
+		padding: 0.5rem 1rem;
+		position: relative;
+		transition: all 0.2s;
+
+		&:before {
+			content: '+';
+			position: relative;
+			margin-right: 0.5rem;
+		}
+
+		&.ui-accordion-header-active {
+			background: $offwhite;
+			color: $csu;
+			border-color: $reservoir;
+			transition: all 0.2s;
+
+			&:before {
+				content: '\2013';
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:not(:last-of-type) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	.accordion-content {
+		overflow: auto;
+		padding: 1rem;
+
+		> * {
+			margin-top: 0;
+		}
+	}
+}

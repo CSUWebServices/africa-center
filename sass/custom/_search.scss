@@ -1,0 +1,71 @@
+.search {
+
+	.site-content {
+		@include inner(900px);
+		// @include section-margin;
+	}
+}
+
+// Search results
+.search-results {
+
+	.page-header, .entry-header {
+		background: transparent;
+		min-height: 0;
+
+		.title-subtitle {
+
+		}
+
+		.page-title {
+			color: $text;
+			font-size: 2rem;
+			line-height: 1.2;
+			margin-top: 0;
+			margin: 3rem 0;
+
+			&:after {
+				display: none;
+			}
+
+			@media #{$small} {
+				font-size: 2rem;
+			}
+
+			@media #{$xs} {
+				font-size: 1.7rem;
+			}
+		}
+	}
+
+	article {
+		margin-bottom: 3rem;
+		padding: 1.5rem 1rem;
+
+		&:nth-of-type(odd) {
+			background: $offwhite;
+		}
+
+		.entry-summary, p {
+			margin: 0;
+		}
+	}
+
+	.entry-title {
+		margin: 0 0 1rem;
+		font-size: 1.5rem;
+
+		@media #{$small} {
+			font-size: 1.3rem;
+		}
+
+		@media #{$xs} {
+			font-size: 1.2rem;
+		}
+	}
+
+	.entry-summary {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

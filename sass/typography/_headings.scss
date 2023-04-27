@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $csu;
+}
+
+@-moz-document url-prefix() {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: lighter !important;
+  }
+}
+
+// Styles defined in _mixins-master.scss
+h1 {
+	@include h1-style;
+}
+
+h2 {
+	@include h2-style;
+}
+
+h3 {
+	@include h3-style;	
+}
+
+h4, h5, h6 {
+	@include proxsemi;
+}

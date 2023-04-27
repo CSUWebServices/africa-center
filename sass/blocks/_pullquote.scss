@@ -1,0 +1,64 @@
+.wp-block-pullquote {
+	border-top: 0.5rem solid;
+	border-bottom: 0.5rem solid;
+	padding: 1.3em 0;
+
+	&.alignleft, &.alignright {
+		display: block;
+		float: none;
+		max-width: none;
+
+		p {
+			font-size: 1.5em;
+
+			@media #{$small} {
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	&.alignfull {
+
+		blockquote {
+			@include inner(900px);
+		}
+	}
+
+	&.is-style-solid-color {
+
+		blockquote {
+			text-align: center;
+
+			p {
+				font-size: 1.5em;
+				margin-bottom: 0.5em;
+				font-family: helvetica;
+
+				@media #{$small} {
+					font-size: 1.35em;
+				}
+
+				@media #{$small} {
+					font-size: 1.2em;
+				}
+
+				@media #{$xs} {
+					font-size: 1.1em;
+				}
+			}
+		}
+	}
+
+	blockquote {
+		padding-left: 0;
+
+		p {
+			font-size: 1.3em;
+			margin-bottom: 0.5em;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+}

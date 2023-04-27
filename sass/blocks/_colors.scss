@@ -1,0 +1,97 @@
+//********** Color **********
+.has-csu-green-color {
+	color: $csu;
+}
+
+.has-csu-green-darker-color {
+	color: darken($csu, 5%);
+}
+
+.has-csu-gold-color {
+	color: $gold;
+}
+
+.has-white-color {
+	color: white;
+}
+
+.has-aggie-orange-color {
+	color: $aggie;
+}
+
+.has-dark-gray-color {
+	color: $gray;
+}
+
+.has-slate-color {
+	color: $slate;
+}
+
+.has-alfalfa-color {
+	color: $alfalfa;
+}
+
+.has-canyon-color {
+	color: $canyon;
+}
+
+.has-reservoir-color {
+	color: $reservoir;
+}
+
+.has-sunshine-color {
+	color: $sunshine;
+}
+
+.has-black-color {
+	color: black;
+}
+
+//********** Background Color **********
+.has-csu-green-background-color, .wp-block-cover.has-csu-green-background-color {
+	background-color: $csu;
+}
+
+.has-csu-green-darker-background-color, .wp-block-cover.has-csu-green-darker-background-color {
+	background-color: darken($csu, 5%);
+}
+
+.has-csu-gold-background-color, .wp-block-cover.has-csu-gold-background-color {
+	background-color: $gold;
+}
+
+.has-white-background-color, .wp-block-cover.has-white-background-color {
+	background-color: white;
+}
+
+.has-aggie-orange-background-color, .wp-block-cover.has-aggie-orange-background-color {
+	background-color: $aggie;
+}
+
+.has-dark-gray-background-color, .wp-block-cover.has-dark-gray-background-color {
+	background-color: $gray;
+}
+
+.has-slate-background-color, .wp-block-cover.has-slate-background-color {
+	background-color: $slate;
+}
+
+.has-alfalfa-background-color, .wp-block-cover.has-alfalfa-background-color {
+	background-color: $alfalfa;
+}
+
+.has-canyon-background-color, .wp-block-cover.has-canyon-background-color {
+	background-color: $canyon;
+}
+
+.has-reservoir-background-color, .wp-block-cover.has-reservoir-background-color {
+	background-color: $reservoir;
+}
+
+.has-sunshine-background-color, .wp-block-cover.has-sunshine-background-color {
+	background-color: $sunshine;
+}
+
+.has-black-background-color, .wp-block-cover.has-black-background-color {
+	background-color: black;
+}

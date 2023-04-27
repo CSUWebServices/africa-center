@@ -1,0 +1,152 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin inner($width: 1100px) {
+	max-width: $width;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media #{$medium} {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@mixin section-padding($height: 4rem) {
+	padding-top: $height;
+	padding-bottom: $height;
+
+	@media #{$small} {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	// @media #{$small} {
+	// 	padding-top: calc($height / 2);
+	// 	padding-bottom: calc($height / 2);
+	// }
+}
+
+@mixin section-margin($height: 4rem) {
+	margin-top: $height;
+	margin-bottom: $height;
+
+	@media #{$small} {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	// @media #{$small} {
+	// 	margin-top: calc($height / 2);
+	// 	margin-bottom: calc($height / 2);
+	// }
+}
+
+@mixin fullwidth {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw);
+	overflow-x: hidden;
+}
+
+// Box shadow
+@mixin box-shadow {
+	box-shadow: 0px 2px 6px rgba(black, 0.3);
+}
+
+@mixin box-shadow-hover {
+	box-shadow: 0px 2px 8px rgba(black, 0.4);
+}
+
+// Remove button styles
+@mixin remove-button-styles {
+	padding: 0;
+	border: none;
+	background: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+// Header styles
+@mixin h1-style {
+	font-family: 'industry-demi', sans-serif;
+	font-size: 2.2em;
+
+	@media #{$small} {
+		font-size: 1.8em;
+	}
+}
+
+@mixin h2-style {
+	font-family: 'industry-book', sans-serif;
+	font-size: 2em;
+	letter-spacing: 1px;
+
+	@media #{$small} {
+		font-size: 1.5em;
+	}
+}
+
+@mixin h3-style {
+	font-family: 'industry-book', sans-serif;
+	font-size: 1.5em; 
+
+	@media #{$small} {
+		font-size: 1.2em;
+	}	
+}
+
+@mixin button-style {
+	border: none;
+	border-radius: 0;
+	background: $color__background-button;
+	box-shadow: none;
+	color: $csu;
+	display: inline-block;
+	font-size: 1.2em;
+	font-family: 'industry-demi';
+	outline-color: $csu;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	padding: .6em 1em .4em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s;
+
+	@media #{$small} {
+		font-size: 1em;
+	}
+
+	&:hover, &:focus {
+		color: darken($csu, 5%);
+		box-shadow: 0 0.25rem 0.5rem rgba(black, 0.3);
+		transform: translate3d(0, -2px, 0);
+		transition: all 0.2s;
+	}
+
+	&:active {
+		transform: translate3d(0, 2px, 0);
+	}
+}

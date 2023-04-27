@@ -1,0 +1,43 @@
+table {
+	margin: 1.5em 0;
+	width: 100%;
+
+	thead {
+		background: $csu;
+		color: white;
+		text-align: left;
+	}
+
+	tbody {
+
+		tr {
+
+			&:not(:last-child) {
+				border-bottom: 1px solid $csu;
+			}
+		}
+	}
+
+	tfoot {
+		border-top: 3px solid $csu;
+	}
+
+	th {
+		@include proxbold;
+	}
+
+	th, td {
+		padding: 0.5rem;
+	}
+
+	&.tablepress {
+
+		thead th, tfoot th {
+			background-color: $csu;
+		}
+	}
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role=row]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role=row]>th:first-child:before {
+	background-color: $csu!important;
+}

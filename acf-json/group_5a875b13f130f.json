@@ -1,0 +1,48 @@
+{
+    "key": "group_5a875b13f130f",
+    "title": "Create Subsite",
+    "fields": [
+        {
+            "key": "field_5a875afc464f2",
+            "label": "This page is a subsite.",
+            "name": "create_subsite",
+            "type": "true_false",
+            "instructions": "This should only be checked for parent pages. For pages within a subsite, assign the parent page.\r\nTo edit your new menu, go to Appearance > Menus and select the menu corresponding to this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "top_level"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1521834748
+}

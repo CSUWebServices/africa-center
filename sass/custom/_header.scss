@@ -1,0 +1,143 @@
+.site-branding {
+	background: $csu;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	background: $csu;
+
+	@media #{$medium} {
+		// border-bottom: 2px solid white;
+	}
+
+	.header-right {
+		display: flex;
+		align-items: center;
+
+		.header-give-wrapper {
+			background: $csu;
+			margin-right: 1.5rem;
+			display: flex;
+
+			.header-give {
+				@include proxsemi;
+				background: $alfalfa;
+				color: $csu;
+				font-size: 0.9em;
+				flex-shrink: 0;
+				padding: 0.5rem 1rem;
+				text-decoration: none;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				transition: all 0.2s;
+
+				&:hover, &:focus {
+					transform: translate3d(0, -2px, 0);
+					transition: all 0.2s;
+				}
+
+				&:focus-visible {
+					outline: 2px solid white;
+				}
+
+				@media #{$small} {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.csu-desktop {
+	display: inline-block;
+	width: 375px;
+	padding: 0 15px 0 1rem;
+
+	@media #{$medium} {
+		display: none;
+	}
+
+	img {
+		width: 100%;
+		display: flex;
+		align-self: center;
+	}
+}
+
+.csu-tablet {
+	width: 200px;
+	display: none;
+	padding: 0 15px 0 1rem;
+
+	@media #{$medium} {
+		display: inline-block;
+	}
+
+	@media #{$small} {
+		display: none;
+	}
+
+	img {
+		width: 100%;
+		display: flex;
+		align-self: center;
+	}
+}
+
+.csu-mobile {
+	display: none;
+	width: 140px;
+	padding: 0 15px 0 1rem;
+
+	@media #{$small} {
+		display: inline-block;
+	}
+
+	img {
+		width: 100%;
+		display: flex;
+		align-self: center;
+	}
+}
+
+.site-title {
+	@include prox;
+	color: white;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 1.1rem;
+	letter-spacing: .1rem;
+	padding: 0.5rem 0 0.5rem 15px;
+	border-left: 2px solid;
+
+	@media #{$small} {
+		font-size: 14px;
+	}
+
+	a, a:visited {
+		color: white;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			color: white;
+		}
+	}
+}
+
+// Headroom styles
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}

@@ -1,0 +1,353 @@
+//********** Default **********
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 3rem;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+//********** General page styles **********
+
+//***** Header *****
+.page-header {
+	// @include inner;
+}
+
+.page-header, .entry-header {
+	// margin-bottom: 3em;
+	min-height: 80vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.entry-header-wrapper {
+	
+	}
+
+	.title-subtitle {
+
+	}
+
+	.title-container {
+		background: rgba($csu, 0.9);
+		padding: 3em 0;
+	}
+
+	.title-inner, .subtitle-inner {
+		@include inner;
+	}
+
+	.small-title {
+		background: $aggie;
+		position: relative;
+		display: inline-block;
+		text-transform: uppercase;
+		@include proxsemi;
+		margin: 0;
+		padding: 0 1rem;
+		color: white;
+		font-size: 1.3em;
+		letter-spacing: 1px;
+
+		@media #{$small} {
+			font-size: 1.1em;
+		}
+	}
+
+	.large-title {
+		color: white;
+		font-family: 'industry-demi';
+		font-size: 3em;
+		margin: 0;
+		line-height: 1.2;
+		max-width: calc(200% / 3);
+
+		@media #{$medium} {
+			max-width: 100%;
+			font-size: 2.5em;
+		}
+
+		@media #{$small} {
+			font-size: 2em;
+		}
+	}
+
+	.subtitle {
+		@include proxsemi;
+		font-size: 1.2rem;
+		margin-bottom: 0;
+		margin-top: 2rem;
+	}
+
+	&.no-header-image {
+		min-height: 0;
+		background-size: default;
+
+		.title-container {
+			background: white;
+		}
+
+		.large-title {
+			color: $csu;
+		}
+
+		.title-container {
+			padding: 1.5em 0;
+		}
+	}
+}
+
+
+//***** Body *****
+.entry-content {
+	@include inner(1100px);
+	margin-top: 0;
+
+	.elementor a {
+		text-decoration: underline;
+	}
+
+	.elementor-widget-icon-box a {
+		text-decoration: none;
+	}
+}
+
+.no-top-p-margin {
+
+	p {
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+}
+
+.no-bottom-p-margin {
+
+	p {
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Posts
+.single-post {
+
+	.entry-header {
+
+		&.no-post-image {
+			@include inner(900px);
+		}
+
+		&.post-image {
+
+			.entry-meta, .entry-meta a {
+				color: white;
+			}
+		}
+
+		.title-subtitle {
+			margin-bottom: 3rem;
+		}
+
+		.entry-title {
+			margin-bottom: 0.67em;
+		}
+	}
+
+	.post-header {
+		text-align: center;
+		margin-bottom: 3rem;
+
+		&.post-image {
+			color: white;
+
+			.entry-title {
+				color: white;
+				margin-top: 0;
+			}
+
+			.entry-meta, .entry-meta a {
+				color: white;
+			}
+
+			.post-categories {
+
+				li {
+
+					a {
+						color: white;
+						border-color: white;
+
+						&:hover, &:focus {
+							background: white;
+							color: $csu;
+						}
+					}
+				}
+			}
+
+			.entry-header-wrapper {
+				background: $csu;
+
+				&.transparent {
+					background: rgba($csu, 0.85);
+				}
+			}
+		}
+
+		&.no-post-image {
+			
+		}
+
+		.entry-header-container {
+			@include inner(900px);
+		}
+
+		.entry-title {
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			margin-top: 0;
+			margin-bottom: 0.67em;
+			padding-top: 1.5rem;
+			font-size: 3rem;
+
+			&:after {
+				left: auto;
+			}
+
+			@media #{$medium} {
+				font-size: 2.5rem;
+			}
+
+			@media #{$small} {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.entry-meta {
+		padding-bottom: 1.5rem;
+	}
+
+	.post-image-wrapper {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $csu;
+			height: 50%;
+			width: 100%;
+			z-index: -1;
+		}
+	}
+
+	.post-image-container {
+		@include inner(900px);
+		padding-top: 1.5rem;
+	}
+
+	.post-categories {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 1rem 0;
+		padding: 0;
+
+		li {
+			&:not(:last-of-type) {
+				margin-right: 1rem;
+			}
+
+			a {
+				border-bottom: 2px solid $csu;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				padding: 0.25rem;
+				text-decoration: none;
+				transition: all 0.1s;
+
+				&:hover, &:focus {
+					background: $csu;
+					color: white;
+					transition: all 0.1s;
+				}
+			}
+		}
+	}
+
+	.entry-content, .entry-footer {
+		@include inner(70ch);
+	}
+}
+
+
+//***** Footer *****
+.entry-footer {
+	@include inner;
+}
+
+
+//********** Page widths **********
+.inner-margin {
+
+}
+
+.inner-padding {
+
+}
+
+
+//********** Archives **********
+.archive {
+
+	.site-content {
+		@include inner;
+	} 
+}
+
+
+//********** Block fixes **********
+.player .vp-video-wrapper .vp-preview {
+	background-size: cover!important;
+}
+
+
+//********** Olark **********
+#olark-wrapper .olark-launch-button .olark-button-text {
+	border: 2px solid white;
+}

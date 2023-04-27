@@ -1,0 +1,36 @@
+.error-404, .not-found {
+	@include inner;
+	text-align: center;
+	min-height: 70vh;
+
+	.page-header {
+		min-height: 20vh;
+		margin-top: 3rem;
+	}
+
+	h1 {
+		border: none;
+		margin-bottom: 0;
+	}
+
+	.page-content {
+		margin-bottom: 3em;
+	}
+
+	.search-form {
+		justify-content: center;
+		margin-top: 3rem;
+
+		label {
+			width: calc(100% / 3);
+
+			@media #{$medium} {
+				width: 50%;
+			}
+
+			@media #{$small} {
+				width: 100%;
+			}
+		}
+	}
+}

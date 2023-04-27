@@ -1,0 +1,167 @@
+//Proxima Nova light
+@font-face {
+    font-family: 'prox-light';
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.eot');
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.woff2') format('woff2'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.woff') format('woff'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.ttf') format('truetype'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.svg#clio_c_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Proxima Nova regular
+@font-face {
+    font-family: 'prox-regular';
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.eot');
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.woff2') format('woff2'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.woff') format('woff'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Proxima Nova semibold
+@font-face {
+    font-family: 'prox-semibold';
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.eot');
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.woff2') format('woff2'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.woff') format('woff'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.ttf') format('truetype');
+    font-weight: regular;
+    font-style: normal;
+}
+
+//Proxima Nova extra bold
+@font-face {
+    font-family: 'prox-extra-bold';
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.eot');
+    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.woff2') format('woff2'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.woff') format('woff'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.ttf') format('truetype'),
+        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.svg#clio_c_boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@mixin proxlight {
+    font-family: 'prox-light', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin prox {
+    font-family: 'prox-regular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin proxsemi {
+    font-family: 'prox-semibold', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin proxbold {
+    font-family: 'prox-regular', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*Elena Regular*/
+@font-face {
+    font-family: 'elena-web';
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegular.eot');
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegular.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Elena Italic*/
+@font-face {
+    font-family: 'elena-web';
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegularItalic.eot');
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Elena Bold*/
+@font-face {
+    font-family: 'elena-web';
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBold.eot');
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBold.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/elena/ElenaWebBasicBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Elena Bold-Italic*/
+@font-face {
+    font-family: 'elena-web';
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBoldItalic.eot');
+    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('//static.colostate.edu/fonts/elena/ElenaWebBasicBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@mixin elena {
+    font-family: 'elena-web', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+// Industry Bold
+
+@font-face {
+    font-family: 'industry-bold';
+    src: url('./inc/webfonts/industry_bold_macroman/Industry-Bold-webfont.eot');
+    src: url('./inc/webfonts/industry_bold_macroman/Industry-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./inc/webfonts/industry_bold_macroman/Industry-Bold-webfont.woff2') format('woff2'),
+        url('./inc/webfonts/industry_bold_macroman/Industry-Bold-webfont.woff') format('woff'),
+        url('./inc/webfonts/industry_bold_macroman/Industry-Bold-webfont.ttf') format('truetype'),
+        url('./inc/webfonts/industry_bold_macroman/Industry-Bold-webfont.svg#webfont') format('svg');
+}
+
+// Industry Book
+
+@font-face {
+    font-family: 'industry-book';
+    src: url('./inc/webfonts/industry_book_macroman/Industry-Book-webfont.eot');
+    src: url('./inc/webfonts/industry_book_macroman/Industry-Book-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./inc/webfonts/industry_book_macroman/Industry-Book-webfont.woff2') format('woff2'),
+        url('./inc/webfonts/industry_book_macroman/Industry-Book-webfont.woff') format('woff'),
+        url('./inc/webfonts/industry_book_macroman/Industry-Book-webfont.ttf') format('truetype'),
+        url('./inc/webfonts/industry_book_macroman/Industry-Book-webfont.svg#webfont') format('svg');
+}
+
+// Industry Demi
+
+@font-face {
+    font-family: 'industry-demi';
+    src: url('./inc/webfonts/industry_demi_macroman/Industry-Demi-webfont.eot');
+    src: url('./inc/webfonts/industry_demi_macroman/Industry-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./inc/webfonts/industry_demi_macroman/Industry-Demi-webfont.woff2') format('woff2'),
+        url('./inc/webfonts/industry_demi_macroman/Industry-Demi-webfont.woff') format('woff'),
+        url('./inc/webfonts/industry_demi_macroman/Industry-Demi-webfont.ttf') format('truetype'),
+        url('./inc/webfonts/industry_demi_macroman/Industry-Demi-webfont.svg#webfont') format('svg');
+}
+
+// Industry Light
+
+@font-face {
+    font-family: 'industry-light';
+    src: url('./inc/webfonts/industry_light_macroman/Industry-Light-webfont.eot');
+    src: url('./inc/webfonts/industry_light_macroman/Industry-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./inc/webfonts/industry_light_macroman/Industry-Light-webfont.woff2') format('woff2'),
+        url('./inc/webfonts/industry_light_macroman/Industry-Light-webfont.woff') format('woff'),
+        url('./inc/webfonts/industry_light_macroman/Industry-Light-webfont.ttf') format('truetype'),
+        url('./inc/webfonts/industry_light_macroman/Industry-Light-webfont.svg#webfont') format('svg');
+}

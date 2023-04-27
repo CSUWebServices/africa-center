@@ -1,0 +1,1 @@
+!function(i){i(".slider").flickity({autoPlay:5e3})}(jQuery);

@@ -1,0 +1,178 @@
+.wp-block-posts {
+	background: $csu;
+	@include section-padding;
+
+	.section-title {
+		@include inner;
+		color: white;
+		text-align: center;
+		margin-top: 0;
+
+		// &:after {
+		// 	content: '';
+		// 	display: block;
+		// 	background: lighten($alfalfa, 20%);
+		// 	height: 0.2rem;
+		// 	width: calc(100% / 3);
+		// 	margin: 0 auto;
+		// }
+	}	
+}
+
+.posts-filter-wrapper {
+	padding: 1.5rem 0;
+	background: white;
+
+	h2 {
+		color: $csu;
+		margin-top: 0;
+	}
+}
+
+.posts-filter-inner {
+	@include inner;
+}
+
+.posts-filter {
+
+	button {
+		margin-bottom: 1rem;
+		border: 2px solid $alfalfa;
+		font-size: 1em;
+
+		@media #{$small} {
+			font-size: 0.8em;
+		}
+
+		&:not(:last-of-type) {
+			margin-right: 1rem;
+		}
+
+		&.selected {
+			transform: scale(1.06);
+			border: 2px solid $csu;
+			transition: all 0.2s;
+		}
+
+		&.active {
+			outline: none;
+			transform: none;
+		}
+	}
+}
+
+.posts-wrapper {
+	@include section-padding;
+	background: $offwhite;
+}
+
+.posts-list {
+	@include inner;
+
+	&.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-gap: 1.5rem;
+
+		@media #{$medium} {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media #{$small} {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&.filter {
+
+		.post-card {
+			width: calc((100% / 3) - 1.5rem);
+			margin-bottom: 1.5rem;
+
+			@media #{$medium} {
+				width: calc(50% - 2rem);
+			}
+
+			@media #{$small} {
+				width: calc(100% - 2rem);
+			}
+		}
+	}
+
+	.post-card {
+		display: block;
+		background: white;
+		@include box-shadow;
+		border-top: 0.5rem solid $alfalfa;
+		text-decoration: none;
+		transition: all 0.2s;
+
+		&:hover, &:focus {
+			transform: translate3d(0, -0.25rem, 0);
+			transition: all 0.2s;
+		}
+
+		&:focus {
+			outline: 2px solid $alfalfa;
+		}
+
+		.image-title {
+			background-size: cover;
+			width: 100%;
+			height: 200px;
+			display: flex;
+		    flex-direction: column;
+		    justify-content: flex-end;
+		    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		    position: relative;
+
+		    &:after {
+		    	content: '';
+		    	position: absolute;
+		    	top: 0;
+		    	right: 0;
+		    	bottom: 0;
+		    	left: 0;
+		    	background: linear-gradient(to bottom, rgba(0,0,0,0.4) 40%, rgba(0,0,0,1) 100%);
+		    }
+
+			h2, h3 {
+				font-size: 1.1em;
+				margin: 0;
+				color: white;
+				padding: 0.5rem 1rem;
+				line-height: 1.2;
+				z-index: 1;
+				font-family: 'industry-book';
+				text-shadow: 1px 1px rgba(black, 0.5);
+			}
+		}
+
+		.card-content {
+			padding: 1rem;
+
+			hr {
+				margin: 0.5rem 0;
+			}
+
+			.date {
+				font-size: 0.9rem;
+				color: lighten($text, 20%);
+				margin: 0;
+				padding: 0.25rem 0;
+			}
+
+			.excerpt {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.more-stories {
+	@include inner;
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
