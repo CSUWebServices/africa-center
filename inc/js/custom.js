@@ -2,68 +2,16 @@
 	var screenSM = 801;
 
 	//********** Mobile navigation **********
-	// $(document).ready(function() {
+	$(document).ready(function() {
 
-	// 	// Convert <a href="#"> tags to <span> tags for better mmenu functionality
-	// 	$('#mobile-navigation a[href="#"]').each(function() {
-	// 		$(this).replaceWith(function() {
-	// 		  return $('<span>' + $(this).html() + '</span>');
-	// 		});
-	// 	});
-
-	//     new Mmenu( '#mobile-navigation', {
-
-	//     	extensions: [
-	// 	      "position-right", 
-	// 	      "pagedim-black",
-	// 	      "fx-menu-slide",
-	//           "fx-panels-slide-100",
-	//           "shadow-page",
-	//           "shadow-panels"
-	//         ],
-	//         "iconPanels": true
-	//     });
-
-	// 	var API = $("#mobile-navigation").data( "mmenu" );
-
-	// 	$("#close").click(function() {
-	// 		API.close();
-	// 	});
-	// });
-
-	//********** Offcanvas navigation **********
-	// Open and close global nav
-	var openNav = $('#offcanvas-nav-button');
-	var closeNav = $('#close-global-nav');
-
-	openNav.click( function() {
-	  	$('body').addClass('global-nav-open');
-	  	$('#open-global-nav').attr('aria-expanded', true);
-
-	  	// Add focus to the close nav button when the menu opens
-	  	$('#close-global-nav').focus();
+		// Convert <a href="#"> tags to <span> tags for better mmenu functionality
+		$('#mobile-navigation a[href="#"]').each(function() {
+			$(this).replaceWith(function() {
+			  return $('<span>' + $(this).html() + '</span>');
+			});
+		});
 	});
 
-	closeNav.click( function() {
-		$('body').removeClass('global-nav-open');
-		$('#open-global-nav').attr('aria-expanded', false);
-
-		// Add focus to nav button after the menu closes
-		$('#open-global-nav').focus();
-	});
-
-	$('.site-content').click( function() {
-		$('body').removeClass('global-nav-open');
-		$('#open-global-nav').attr('aria-expanded', false);
-	});
-
-
-	// Change 'Menu' to 'Close' if the mobile menu is open
-	if( $('body').hasClass('mm-wrapper_opened') ) {
-		console.log('Menu is open');
-	} else {
-		console.log('Menu is closed');
-	}
 
 
 	//========== Trap focus in open modal ==========
@@ -114,78 +62,12 @@
 
 
 
-	// Mobile navigation for subsites
-	$(document).ready(function() {
-		// Convert <a href="#"> tags to <span> tags for better mmenu functionality
-		$('.mobile-nav a[href="#"]').each(function() {
-		  $(this).replaceWith(function() {
-		    return $('<span>' + $(this).html() + '</span>');
-		  });
-		});
-
-		// Mmenu
-		$(".mobile-nav").mmenu({
-		   // options
-
-		    // Enable drag to close (hammer.js must be active)
-		    dragClose: {
-		       close: true
-		    },
-
-		    // Menu effects
-		    extensions: ["effect-menu-slide", "effect-panels-slide-100", "effect-listitems-slide", "pageshadow"],
-
-		    // Fixed footer
-		    "navbars": [
-		          true,
-		          {
-		             "position": "bottom",
-		             "content": [
-		                "<p class='swipe'>&laquo; Swipe to Close</p>"
-		             ]
-		          }
-		       ]
-		});
-
-		var API = $(".mobile-nav").data( "mmenu" );
-
-		$("#open-secondary-nav").click(function() {
-		   API.open();
-		});
-	});
-
-
-
 
 	// Set SVG role to "presentation" for decorative icons
 	$(window).load(function() {
 		$('.global-contact svg').attr('role', 'presentation');
 		$('.slick-slider svg').attr('role', 'presentation');
 	});
-
-
-
-	// Accordions for global nav menus on mobile
-	function globalNavAccordions() {
-		if (window.matchMedia("(min-width: "+ screenSM +"px)").matches) {
-			// The viewport is at least 800 pixels wide
-			if( $('.menu-wrapper').hasClass('ui-accordion') ) {
-				$('.menu-wrapper').accordion('destroy');
-			}
-		} else {
-			// The viewport is less than 800 pixels wide
-			$('.menu-wrapper').accordion({
-				active: false,
-		  		collapsible: true,
-		  		animate: 200
-			});
-		}
-
-
-	}
-	var widthSmCheck = window.matchMedia("(min-width: " + screenSM + "px)");
-	widthSmCheck.addListener(globalNavAccordions);
-	window.addEventListener("DOMContentLoaded", globalNavAccordions, false);
 
 
 	//********** Main navigation **********
@@ -231,3 +113,53 @@
 	// $(window).resize(contentHeight);
 
 })(jQuery);
+
+// Mobile navigation
+
+// Fire the plugin
+document.addEventListener(
+	"DOMContentLoaded", () => {
+		new Mmenu( "#mobile-navigation", {
+			// options
+			slidingSubmenus: false,
+			"offCanvas": {
+				"position": "bottom"
+			 },
+		}, {
+			// configuration
+			classNames: {
+				vertical: "sub-menu"
+			}
+		});
+	}
+);
+
+// Open the menu
+document.addEventListener(
+	"DOMContentLoaded", () => {
+		const menu = new Mmenu( "#mobile-navigation" );
+		const api = menu.API;
+
+		document.querySelector( "#open-button" )
+			.addEventListener(
+				"click", () => {
+					api.open();
+				}
+			);
+	}
+);
+	
+// Close the menu
+document.addEventListener(
+	"DOMContentLoaded", () => {
+		const menu = new Mmenu( "#mobile-navigation" );
+		const api = menu.API;
+
+		document.querySelector( "#close-button" )
+			.addEventListener(
+				"click", () => {
+					api.close();
+				}
+			);
+	}
+);

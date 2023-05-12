@@ -40,78 +40,14 @@
 			</div><!-- .site-branding -->
 
 			<div class="header-right">
-				<?php if( !is_page('dayofgiving') ): ?>
-					<div class="header-give-wrapper">
-						<a class="header-give" href="https://advancing.colostate.edu/GIVE">Give Now</a>
-					</div> <!-- .header-give-wrapper -->
-				<?php endif; ?>
-				<button id="offcanvas-nav-button" title="Open Navigation" aria-haspopup="true" aria-controls="#site-navigation" aria-expanded="false" aria-label="Open Navigation"><i class="fa fa-th"></i><span>Menu</span></button>
+				<p><a href="https://sustainability.colostate.edu/"><img src="<?php echo get_stylesheet_directory_uri() . '/inc/logos/soges.png'; ?>" alt="School of Environmental Sustainability logo"><span>School of Global Environmental Sustainability</span></a></p>
 			</div> <!-- .header-right -->
 
 		</div><!-- .top-header -->
 
-		<?php /*
-
-		<div class="offcanvas-navigation-wrapper">
-			<nav id="site-navigation" class="main-navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
-		</div> <!-- .offcanvas-navigation-wrapper -->
-
-		*/ ?>
-
-		<div class="subsite-header-wrapper">
-			<?php 
-				// Get current page ID
-				global $post;
-				$currentID = $post->ID;
-
-				// Set the subsite slug
-				if( get_post_ancestors( $currentID )) { // If the page is a child page
-					// Get the highest level ancestor's page ID
-					$ancestors = get_post_ancestors( $currentID );
-					$ancestorID = end( $ancestors );
-					$ancestor = get_post( $ancestorID );
-					$ancestorSlug = $ancestor->post_name;
-					
-					$subsiteID = $ancestorID;
-					$subsiteSlug = $ancestorSlug;
-					$subsiteName = $ancestor->post_title;
-
-					$menu = wp_get_nav_menu_object( $subsiteName );
-					$menuID = $menu->term_id;
-				} else { // If the page is a parent page
-					$subsiteID = $currentID;
-					$subsiteSlug = $post->post_name;
-					$subsiteName = $post->post_title;
-
-					$menu = wp_get_nav_menu_object( $subsiteName );
-					$menuID = $menu->term_id;
-				}
-
-				$subsiteNameOnly = apply_filters('the_content', '[subsite_title element="h2" wrapper="false" link="false"]');
-
-				// Subsite Title
-				echo apply_filters('the_content', '[subsite_title element="h2" wrapper="true"]');
-
-				// Mobile nav open
-				if( get_post_meta($subsiteID, '_is_subsite') ) {
-					echo 
-					'<button id="open-secondary-nav">
-					     <div class="subsite-nav-icon"> 
-					      <span></span>
-					      <span></span>
-					      <span></span>
-					    </div>'
-						. $subsiteNameOnly .
-					'</button>';
-				}
-
-				// Subsite Navigation
-				do_shortcode('[subsite_nav container_class="subsite-nav main-navigation" menu_class="menu" items_wrap="<ul id=\'%1$s\' class=\'%2$s\'>%3$s</ul>"]');
-				do_shortcode('[subsite_nav container_class="subsite-nav mobile-nav" menu_class="menu" items_wrap="<ul id=\'%1$s\' class=\'%2$s\'>%3$s</ul>"]');
-			?>
-		</div> <!-- .subsite-header-wrapper -->
+		<nav id="site-navigation" class="main-navigation" aria-label="Site Navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
 

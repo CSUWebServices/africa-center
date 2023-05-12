@@ -45,9 +45,6 @@ function csu_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary'  => esc_html__( 'Primary', 'csu' ),
-		'global_1' => esc_html__( 'Global Nav 1', 'csu' ),
-		'global_2' => esc_html__( 'Global Nav 2', 'csu' ),
-		'global_3' => esc_html__( 'Global Nav 3', 'csu' ),
 		'footer'   => esc_html__( 'Footer', 'csu' )
 	) );
 

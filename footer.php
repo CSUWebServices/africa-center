@@ -56,6 +56,15 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<nav id="mobile-navigation" aria-label="Mobile Navigation">
+	<?php wp_nav_menu( array( 
+		'theme_location' => 'primary',
+		'menu_id'        => 'primary-mobile-menu',
+		'container'      => null
+		// 'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>'
+	) ); ?>
+</nav><!-- #site-navigation -->
+
 <?php wp_footer(); ?>
 
 <?php get_template_part( 'template-parts/design', 'output' ); ?>

@@ -4,6 +4,13 @@
 	display: flex;
 	align-items: center;
 	padding: 1rem 0;
+
+	a {
+
+		&:focus-within {
+			outline: dotted;
+		}
+	}
 }
 
 .top-header {
@@ -18,36 +25,41 @@
 	.header-right {
 		display: flex;
 		align-items: center;
+		padding: 0 1em;
+		max-width: 365px;
 
-		.header-give-wrapper {
-			background: $csu;
-			margin-right: 1.5rem;
-			display: flex;
+		p {
+			margin: 0;
+			line-height: 1.1;
 
-			.header-give {
-				@include proxsemi;
-				background: $alfalfa;
-				color: $csu;
-				font-size: 0.9em;
-				flex-shrink: 0;
-				padding: 0.5rem 1rem;
-				text-decoration: none;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-				transition: all 0.2s;
+			img {
+				max-width: 40px;
+				width: 100%;
+				margin-right: 0.5rem;
+			}
 
-				&:hover, &:focus {
-					transform: translate3d(0, -2px, 0);
-					transition: all 0.2s;
-				}
-
-				&:focus-visible {
-					outline: 2px solid white;
-				}
+			span {
 
 				@media #{$small} {
 					display: none;
 				}
+			}
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: 'prox-light';
+			display: flex;
+			align-items: center;
+
+			&:hover, &:focus {
+				color: white
+			}
+
+			&:focus-within {
+				outline: dotted;
 			}
 		}
 	}

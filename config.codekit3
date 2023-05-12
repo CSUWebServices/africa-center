@@ -366,7 +366,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/archive-min.js",
+      "oAP" : "\/inc\/js\/min\/archive-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -377,7 +377,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/custom-min.js",
+      "oAP" : "\/inc\/js\/min\/custom-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -388,7 +388,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/customizer-min.js",
+      "oAP" : "\/inc\/js\/min\/customizer-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -399,7 +399,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/deny-list-blocks-min.js",
+      "oAP" : "\/inc\/js\/min\/deny-list-blocks-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -410,7 +410,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/min\/archive-min-min.js",
+      "oAP" : "\/inc\/js\/min\/min\/archive-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -421,7 +421,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/min\/custom-min-min.js",
+      "oAP" : "\/inc\/js\/min\/min\/custom-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -432,7 +432,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/min\/deny-list-blocks-min-min.js",
+      "oAP" : "\/inc\/js\/min\/min\/deny-list-blocks-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -443,7 +443,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/min\/passions-min-min.js",
+      "oAP" : "\/inc\/js\/min\/min\/passions-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -454,7 +454,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/min\/slick-init-min-min.js",
+      "oAP" : "\/inc\/js\/min\/min\/slick-init-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -465,7 +465,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/min\/slider-init-min-min.js",
+      "oAP" : "\/inc\/js\/min\/min\/slider-init-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -476,7 +476,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/navigation-min.js",
+      "oAP" : "\/inc\/js\/min\/navigation-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -487,7 +487,18 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/skip-link-focus-fix-min.js",
+      "oAP" : "\/inc\/js\/min\/skip-link-focus-fix-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/js\/slick-init-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/js\/min\/slick-init-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -498,7 +509,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/slick-init-min.js",
+      "oAP" : "\/inc\/js\/min\/slick-init-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -509,7 +520,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/js\/slider-init-min.js",
+      "oAP" : "\/inc\/js\/min\/slider-init-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -617,6 +628,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/inc\/logos\/soges.png" : {
+      "ft" : 32768,
+      "iS" : 40987,
+      "oA" : 0,
+      "oAP" : "\/inc\/logos\/soges.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/inc\/plugins\/aos\/aos.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -635,7 +659,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/aos\/aos-min.js",
+      "oAP" : "\/inc\/plugins\/aos\/min\/aos-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -670,7 +694,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/flickity\/flickity.pkgd.min-min.js",
+      "oAP" : "\/inc\/plugins\/flickity\/min\/flickity.pkgd.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -681,7 +705,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/flickity\/min\/flickity.pkgd.min-min-min.js",
+      "oAP" : "\/inc\/plugins\/flickity\/min\/min\/flickity.pkgd.min-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -704,7 +728,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/gridtab\/gridtab.min-min.js",
+      "oAP" : "\/inc\/plugins\/gridtab\/min\/gridtab.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -715,7 +739,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/headroom-min.js",
+      "oAP" : "\/inc\/plugins\/min\/headroom-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -726,7 +750,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/isotope.min-min.js",
+      "oAP" : "\/inc\/plugins\/min\/isotope.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -737,7 +761,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/jQuery.headroom-min.js",
+      "oAP" : "\/inc\/plugins\/min\/jQuery.headroom-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -748,7 +772,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/jquery.magnific-popup.min-min.js",
+      "oAP" : "\/inc\/plugins\/min\/jquery.magnific-popup.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -765,18 +789,29 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/inc\/plugins\/mmenu\/hammer.min.js" : {
+    "\/inc\/plugins\/mmenu\/addons\/backbutton\/mmenu.backbutton.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/mmenu\/hammer.min-min.js",
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/backbutton\/min\/mmenu.backbutton-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
-    "\/inc\/plugins\/mmenu\/jquery.mmenu.all.css" : {
+    "\/inc\/plugins\/mmenu\/addons\/backbutton\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/backbutton\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/counters\/mmenu.counters.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -784,17 +819,486 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/mmenu\/jquery.mmenu.all-min.css",
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/counters\/mmenu.counters-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/inc\/plugins\/mmenu\/jquery.mmenu.all.min.js" : {
+    "\/inc\/plugins\/mmenu\/addons\/counters\/mmenu.counters.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/mmenu\/jquery.mmenu.all.min-min.js",
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/counters\/min\/mmenu.counters-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/counters\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/counters\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/iconbar\/mmenu.iconbar.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/iconbar\/mmenu.iconbar-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/iconbar\/mmenu.iconbar.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/iconbar\/min\/mmenu.iconbar-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/iconbar\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/iconbar\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/iconpanels\/_options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/iconpanels\/min\/_options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/iconpanels\/mmenu.iconpanels.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/iconpanels\/mmenu.iconpanels-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/iconpanels\/mmenu.iconpanels.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/iconpanels\/min\/mmenu.iconpanels-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/configs.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/configs-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/mmenu.navbars.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/mmenu.navbars-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/mmenu.navbars.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/mmenu.navbars-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/navbar.breadcrumbs.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/navbar.breadcrumbs-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/navbar.close.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/navbar.close-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/navbar.prev.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/navbar.prev-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/navbar.searchfield.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/navbar.searchfield-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/navbar.tabs.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/navbar.tabs-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/navbar.title.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/navbar.title-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/navbars\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/navbars\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/pagescroll\/configs.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/pagescroll\/min\/configs-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/pagescroll\/mmenu.pagescroll.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/pagescroll\/min\/mmenu.pagescroll-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/pagescroll\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/pagescroll\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/configs.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/min\/configs-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/mmenu.searchfield.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/mmenu.searchfield-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/mmenu.searchfield.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/min\/mmenu.searchfield-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/de.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/de-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/fa.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/fa-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/nl.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/nl-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/pt_br.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/pt_br-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/ru.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/ru-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/sk.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/sk-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/uk.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/searchfield\/translations\/min\/uk-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/sectionindexer\/mmenu.sectionindexer.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/sectionindexer\/mmenu.sectionindexer-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/sectionindexer\/mmenu.sectionindexer.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/sectionindexer\/min\/mmenu.sectionindexer-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/sectionindexer\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/sectionindexer\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/setselected\/mmenu.setselected.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/setselected\/mmenu.setselected-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/setselected\/mmenu.setselected.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/setselected\/min\/mmenu.setselected-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/setselected\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/setselected\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/sidebar\/mmenu.sidebar.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/sidebar\/mmenu.sidebar-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/sidebar\/mmenu.sidebar.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/sidebar\/min\/mmenu.sidebar-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/addons\/sidebar\/options.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/inc\/plugins\/mmenu\/addons\/sidebar\/min\/options-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/hammer.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/min\/hammer.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -805,7 +1309,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/mmenu\/jquery.mmenu.dragclose.min-min.js",
+      "oAP" : "\/inc\/plugins\/mmenu\/min\/jquery.mmenu.dragclose.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -816,7 +1320,30 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/mmenu\/min\/mmenu-min-min.js",
+      "oAP" : "\/inc\/plugins\/mmenu\/min\/min\/mmenu-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/inc\/plugins\/mmenu\/mmenu.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/mmenu-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/inc\/plugins\/mmenu\/mmenu.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/inc\/plugins\/mmenu\/min\/mmenu-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -859,7 +1386,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/remodal\/remodal.min-min.js",
+      "oAP" : "\/inc\/plugins\/remodal\/min\/remodal.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -938,7 +1465,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/slick\/slick.min-min.js",
+      "oAP" : "\/inc\/plugins\/slick\/min\/slick.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -949,7 +1476,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/plugins\/sticky-kit.min-min.js",
+      "oAP" : "\/inc\/plugins\/min\/sticky-kit.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1010,7 +1537,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/webfonts\/industry_bold_macroman\/specimen_files\/easytabs-min.js",
+      "oAP" : "\/inc\/webfonts\/industry_bold_macroman\/specimen_files\/min\/easytabs-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1107,7 +1634,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/webfonts\/industry_book_macroman\/specimen_files\/easytabs-min.js",
+      "oAP" : "\/inc\/webfonts\/industry_book_macroman\/specimen_files\/min\/easytabs-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1204,7 +1731,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/webfonts\/industry_demi_macroman\/specimen_files\/easytabs-min.js",
+      "oAP" : "\/inc\/webfonts\/industry_demi_macroman\/specimen_files\/min\/easytabs-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1301,7 +1828,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/inc\/webfonts\/industry_light_macroman\/specimen_files\/easytabs-min.js",
+      "oAP" : "\/inc\/webfonts\/industry_light_macroman\/specimen_files\/min\/easytabs-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -2947,14 +3474,6 @@
       "oAP" : "\/template-parts\/design-output.php",
       "oF" : 0
     },
-    "\/template-parts\/global-nav.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/global-nav.php",
-      "oF" : 0
-    },
     "\/template-parts\/page-header.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4322,7 +4841,7 @@
       "autoOutputPathRelativePath" : "\/min",
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
-      "autoOutputPathStyle" : 0,
+      "autoOutputPathStyle" : 2,
       "bundleFormat" : 0,
       "minifierStyle" : 1,
       "sourceMapStyle" : 0,

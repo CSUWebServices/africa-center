@@ -1,9 +1,9 @@
 a {
 	color: $color__link;
 	text-decoration-skip-ink: none;
-	text-decoration-thickness: 0.5ch;
-	text-decoration-color: $alfalfa;
-	text-underline-offset: -0.33ch;
+	text-decoration-thickness: 0.3ch;
+	text-decoration-color: $slate;
+	// text-underline-offset: -0.33ch;
 
 	&:visited {
 		color: $color__link-visited;
@@ -12,9 +12,10 @@ a {
 	&:focus,
 	&:active {
 		color: $color__link-hover;
-		text-underline-offset: -2.3ch;
-	    text-decoration-thickness: 1.8ch;
-	    transition: all 0.2s;
+		text-decoration-color: $reservoir;
+		// text-underline-offset: -2.3ch;
+	    // text-decoration-thickness: 1.8ch;
+	    // transition: all 0.2s;
 	}
 	&:focus {
 		outline: thin dotted;
