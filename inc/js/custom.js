@@ -122,6 +122,7 @@ document.addEventListener(
 		new Mmenu( "#mobile-navigation", {
 			// options
 			slidingSubmenus: false,
+			navbar:          false,
 			"offCanvas": {
 				"position": "bottom"
 			 },
@@ -135,6 +136,7 @@ document.addEventListener(
 );
 
 // Open the menu
+/*
 document.addEventListener(
 	"DOMContentLoaded", () => {
 		const menu = new Mmenu( "#mobile-navigation" );
@@ -148,8 +150,10 @@ document.addEventListener(
 			);
 	}
 );
+*/
 	
 // Close the menu
+/*
 document.addEventListener(
 	"DOMContentLoaded", () => {
 		const menu = new Mmenu( "#mobile-navigation" );
@@ -163,3 +167,4 @@ document.addEventListener(
 			);
 	}
 );
+*/

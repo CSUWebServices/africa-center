@@ -56,6 +56,10 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<!-- Mobile navigation button -->
+<a class="mobile-nav-button open" href="#mobile-navigation">Menu</a>
+<a class="mobile-nav-button close" href="#page">Close</a>
+
 <nav id="mobile-navigation" aria-label="Mobile Navigation">
 	<?php wp_nav_menu( array( 
 		'theme_location' => 'primary',
