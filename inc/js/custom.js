@@ -150,7 +150,7 @@ document.addEventListener(
 			);
 	}
 );
-*/
+*/	
 	
 // Close the menu
 /*

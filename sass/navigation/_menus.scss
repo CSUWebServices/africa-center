@@ -7,7 +7,7 @@
 	margin: 0;
 	padding: 0.5rem 1rem;
 
-	@media #{$medium} {
+	@media #{$small} {
 		display: none;
 	}
 
@@ -176,6 +176,10 @@
 }
 
 // Mobile navigation
+#mobile-navigation {
+	padding-bottom: 3em;
+}
+
 .mobile-nav-button {
 	display: none;
 	visibility: hidden;

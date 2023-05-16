@@ -57,8 +57,18 @@
 </div><!-- #page -->
 
 <!-- Mobile navigation button -->
-<a class="mobile-nav-button open" href="#mobile-navigation">Menu</a>
-<a class="mobile-nav-button close" href="#page">Close</a>
+<!-- <a class="mobile-nav-button open" href="#mobile-navigation">Menu</a>
+<a class="mobile-nav-button close" href="#page">Close</a> -->
+
+<mm-burger 
+	class="mobile-nav-button" 
+	menu="mobile-navigation" 
+	fx="spin"
+    ease="elastic"
+    role="button"
+    tabindex="0"
+    title="Toggle the menu">
+</mm-burger>
 
 <nav id="mobile-navigation" aria-label="Mobile Navigation">
 	<?php wp_nav_menu( array( 

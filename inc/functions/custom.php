@@ -16,7 +16,7 @@ if( function_exists('acf_add_options_page') ) {
 // Add defer tag to JS scripts
 function add_defer_attribute($tag, $handle) {
    // add script handles to the array below
-   $scripts_to_defer = array( 'jquery-ui', 'custom-js', 'archive-js', 'font-awesome', 'mmenu', 'hammer', 'dragclose', 'subsites', 'aos' );
+   $scripts_to_defer = array( 'jquery-ui', 'custom-js', 'archive-js', 'font-awesome', 'mmenu', 'mburger', 'aos', 'slick' );
    
    foreach($scripts_to_defer as $defer_script) {
       if ($defer_script === $handle) {
@@ -43,6 +43,20 @@ function add_async_attribute($tag, $handle) {
 }
 
 add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+
+
+// Add module type to mburger
+function add_type_attribute($tag, $handle, $src) {
+   // if not your script, do nothing and return original $tag
+   if ( 'mburger' !== $handle ) {
+       return $tag;
+   }
+   // change the script tag by adding type="module" and return it.
+   $tag = '<script type="module" defer src="' . esc_url( $src ) . '"></script>';
+   return $tag;
+}
+add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);
+
 
 // Load custom admin stylesheet
 function load_custom_wp_admin_style() {

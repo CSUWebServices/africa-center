@@ -16,6 +16,14 @@
 		 }
 	}//.mm-arrow, .mm-next
 
+	.mm-listitem--vertical>.mm-listitem__btn {
+		border-color: white;
+	}
+
+	.mm-btn--next:after, .mm-btn--prev:before {
+		border-color: white!important;
+	}
+
 	.mm-prev {
 
 		 &:before {

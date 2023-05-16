@@ -47,6 +47,7 @@ function csu_scripts() {
 
 	// mmenu (mobile navigation)
 	wp_enqueue_script( 'mmenu', get_template_directory_uri() . '/inc/plugins/mmenu/mmenu.js', array(), null, true );
+	wp_enqueue_script( 'mburger', get_template_directory_uri() . '/inc/plugins/mmenu/mburger/index.js', array(), null, true );
 	// wp_enqueue_script( 'mburger', get_template_directory_uri() . '/inc/plugins/mmenu/mburger/mburger.js', array(), null, true );
 	// wp_enqueue_script( 'hammer', get_template_directory_uri() . '/inc/plugins/mmenu/hammer.min.js', array(), null, true );
 	// wp_enqueue_script( 'dragclose', get_template_directory_uri() . '/inc/plugins/mmenu/jquery.mmenu.dragclose.min.js', array('jquery'), null, true );
