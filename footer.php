@@ -17,15 +17,30 @@
 
 		<div class="top-footer-container">
 			<div class="top-footer">
+
 				<div class="footer-left">
-					
+					<?php wp_nav_menu( array( 
+						'theme_location' => 'footer'
+					)); ?>
 				</div> <!-- .footer-left -->
+
 				<div class="footer-middle">
-		
+					<address>
+						109 Johnson Hall<br>
+						Colorado State University<br>
+						Fort Collins, CO 80523-1036
+					</address>
 				</div> <!-- .footer-middle -->
+
 				<div class="footer-right">
-					
+					<a class="gift-link" href="">Make a Gift</a>
+					<ul class="social-links">
+						<li><a href="https://www.instagram.com/csu_africacenter/"></a></li>
+						<li><a href="https://www.facebook.com/csuafricacenter"></a></li>
+						<li><a href="https://twitter.com/theafricacenter"></a></li>
+					</ul><!-- .social-links -->
 				</div> <!-- .footer-right -->
+
 			</div> <!-- .top-footer -->
 		</div><!-- .footer-container -->
 

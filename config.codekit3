@@ -3432,12 +3432,12 @@
       "oAP" : "\/template-parts\/blocks\/posts\/posts.php",
       "oF" : 0
     },
-    "\/template-parts\/blocks\/quote-slider\/quote-slider.php" : {
+    "\/template-parts\/blocks\/slider\/slider.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/quote-slider\/quote-slider.php",
+      "oAP" : "\/template-parts\/blocks\/slider\/slider.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/staff\/staff.php" : {

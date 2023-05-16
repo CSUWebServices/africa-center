@@ -91,19 +91,19 @@ function register_acf_block_types() {
             },
         ));
 
-        // quote slider
+        // slider
         acf_register_block_type(array(
-            'name'              => 'quote-slider',
-            'title'             => __('Quote Slider'),
-            'description'       => __('A slider for quotes'),
-            'render_template'   => 'template-parts/blocks/quote-slider/quote-slider.php',
-            'category'          => 'text',
-            'icon'              => 'format-quote',
-            'keywords'          => array( 'slider', 'quote' ),
+            'name'              => 'slider',
+            'title'             => __('Slider'),
+            'description'       => __('A traditional slider with links'),
+            'render_template'   => 'template-parts/blocks/slider/slider.php',
+            'category'          => 'ramblocks',
+            'icon'              => 'slides',
+            'keywords'          => array( 'slider', 'images' ),
             'enqueue_assets'    => function(){
-              wp_enqueue_style( 'flickity', get_template_directory_uri() . '/inc/plugins/flickity/flickity.css', array(), null, 'all' );
-              wp_enqueue_script( 'flickity', get_template_directory_uri() . '/inc/plugins/flickity/flickity.pkgd.min.js', array( 'jquery' ), null, true );
-              wp_enqueue_script( 'slider-init', get_template_directory_uri() . '/inc/js/min/slider-init-min.js', array( 'jquery' ), null, true );
+              wp_enqueue_style( 'slick', get_template_directory_uri() . '/inc/plugins/slick/slick.css', array(), null, 'all' );
+              wp_enqueue_script( 'flickity', get_template_directory_uri() . '/inc/plugins/slick/slick.min.js', array( 'jquery' ), null, true );
+              wp_enqueue_script( 'slider-init', get_template_directory_uri() . '/inc/js/min/slick-init-min.js', array( 'jquery' ), null, true );
             },
         ));
 
