@@ -28,16 +28,29 @@
 					<address>
 						109 Johnson Hall<br>
 						Colorado State University<br>
-						Fort Collins, CO 80523-1036
+						Fort Collins, CO 80523-1036<br>
+						csuafricacenter@gmail.com
 					</address>
 				</div> <!-- .footer-middle -->
 
 				<div class="footer-right">
 					<a class="gift-link" href="">Make a Gift</a>
 					<ul class="social-links">
-						<li><a href="https://www.instagram.com/csu_africacenter/"></a></li>
-						<li><a href="https://www.facebook.com/csuafricacenter"></a></li>
-						<li><a href="https://twitter.com/theafricacenter"></a></li>
+						<li>
+							<a href="https://www.instagram.com/csu_africacenter/">
+								<img src="<?php echo get_stylesheet_directory_uri() . '/inc/icons/instagram.svg'; ?>" alt="instagram icon">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/csuafricacenter">
+								<img src="<?php echo get_stylesheet_directory_uri() . '/inc/icons/facebook.svg'; ?>" alt="facebook icon">
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/theafricacenter">
+							<img src="<?php echo get_stylesheet_directory_uri() . '/inc/icons/twitter.svg'; ?>" alt="twitter icon">
+							</a>
+						</li>
 					</ul><!-- .social-links -->
 				</div> <!-- .footer-right -->
 

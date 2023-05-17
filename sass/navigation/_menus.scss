@@ -185,7 +185,7 @@
 	visibility: hidden;
 
 	position: fixed;
-	z-index: 1000000000;
+	z-index: 9999;
 	bottom: 0;
 	left: 50%;
     transform: translateX(-50%);
@@ -229,7 +229,7 @@
 }
 
 .mm-menu {
-	border-left: 0.25rem solid $canyon;
+	border-top: 0.25rem solid white;
 	--mm-color-background: #1e4d2b;
 	--mm-color-text: white;
 	--mm-color-text-dimmed: #c3c3c3;
