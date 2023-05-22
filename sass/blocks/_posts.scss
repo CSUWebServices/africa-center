@@ -1,64 +1,12 @@
 .wp-block-posts {
-	background: $csu;
 	@include section-padding;
 
 	.section-title {
 		@include inner;
-		color: white;
-		text-align: center;
-		margin-top: 0;
-
-		// &:after {
-		// 	content: '';
-		// 	display: block;
-		// 	background: lighten($alfalfa, 20%);
-		// 	height: 0.2rem;
-		// 	width: calc(100% / 3);
-		// 	margin: 0 auto;
-		// }
-	}	
-}
-
-.posts-filter-wrapper {
-	padding: 1.5rem 0;
-	background: white;
-
-	h2 {
 		color: $csu;
 		margin-top: 0;
-	}
-}
-
-.posts-filter-inner {
-	@include inner;
-}
-
-.posts-filter {
-
-	button {
-		margin-bottom: 1rem;
-		border: 2px solid $alfalfa;
-		font-size: 1em;
-
-		@media #{$small} {
-			font-size: 0.8em;
-		}
-
-		&:not(:last-of-type) {
-			margin-right: 1rem;
-		}
-
-		&.selected {
-			transform: scale(1.06);
-			border: 2px solid $csu;
-			transition: all 0.2s;
-		}
-
-		&.active {
-			outline: none;
-			transform: none;
-		}
-	}
+		font-family: 'industry-light';
+	}	
 }
 
 .posts-wrapper {

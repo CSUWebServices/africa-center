@@ -26,52 +26,107 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $header = get_field('header');
-$category = get_field('category') ?: 'Select category of posts to display';
-$category_title = get_cat_name($category);
+$featured_posts = get_field('featured_post');
+$featured_id = $featured_posts->ID;
+$select_posts = get_field('select_posts'); ?>
 
-global $post;
+<div class="wp-block-posts">
 
-$catPosts = get_posts( array(
-    'posts_per_page' => 3,
-    'category'       => $category
-) );
+    <?php if( $header ) { ?>
+        <h2 class="section-title"><?php echo $header; ?></h2>
+    <?php }
 
-if( $catPosts ) { ?>
-    <div class="wp-block-posts alignfull">
-        <?php /* <h2 class="section-title"><?php echo $category_title; ?> Stories</h2> */ ?>
-        <?php if( $header ) { ?>
-            <h2 class="section-title"><?php echo $header; ?></h2>
-        <?php } ?>
-    	<div class="posts-list grid" data-aos="fade-up">
-    		<?php foreach($catPosts as $post) { 
-                setup_postdata( $post );
+    /*
+    if( $featured_posts ) {
+        foreach ($featured_posts as $featured):
 
-            	$image = get_the_post_thumbnail( $post->ID, 'large' );
-                $permalink = get_permalink( $post->ID );
-                $title = get_the_title( $post->ID );
-                $excerpt = get_the_excerpt( $post->ID );
-                if($image) {
-                    $image_link = get_the_post_thumbnail_url( $post->ID, 'large' );
-                } else {
-                    $image_link = get_field('default_image', 'option');
-                } ?>
-        		<a class="post-card" href="<?php echo $permalink; ?>">
-        			<div class="image-title" style="background-image:url('<?php echo $image_link; ?>');">
+            $categories = get_the_category( $featured->ID );
+            $permalink = get_permalink( $featured->ID );
+            $title = get_the_title( $featured->ID );
+            $thumbnail = get_the_post_thumbnail_url( $featured->ID );
+            $date = get_the_date( 'F jS, Y', $featured->ID ); ?>
+
+            <a href="<?php echo $permalink; ?>" class="featured-post featured-link">
+                <div class="featured-card" style="bacgkround-image:url('<?php echo $thumbnail; ?>');">
+
+                    <?php  if( ! empty( $categories ) ) { ?>
+                        <p class="featured-category">
+                            <?php echo esc_html( $categories[0]->name ); ?>
+                        </p>
+                    <?php } ?>
+
+                    <div class="card-meta">
                         <h3><?php echo $title; ?></h3>
-                    </div> <!-- .image-title -->
-                    <div class="card-content">
-                        <!-- <h3><?php echo $title; ?></h3>
-                        <hr /> -->
-                        <?php echo '<p class="date">' . get_the_date() . '</p>'; ?>
-                        <?php if($excerpt) {
-                            echo '<p class="excerpt">' . $excerpt . '</p>';
-                        } ?>
-                    </div> <!-- .card-content -->
-        		</a>
-    		<?php } wp_reset_postdata(); ?>
-    	</div> <!-- .posts-list -->
-        <div class="more-stories" data-aos="zoom-in" data-aos-delay="500">
-            <a class="button" href="/blog">More Impact Stories</a>
-        </div> <!-- .more-stories -->
-    </div> <!-- .wp-block-posts -->
-<?php }
+                        <p><?php echo $date; ?></p>
+                    </div><!-- .card-meta -->
+
+                </div><!-- .featured-card -->
+            </a><!-- .featured-post -->
+
+        <?php endforeach; wp_reset_postdata();
+    } else {
+        echo '<h2>Please select a featured post.</h2>';
+    }
+    */
+
+    // Secondary Posts
+    if( $select_posts ) {  // If the user selected manual posts, show those ?>
+        <div class="secondary-posts">
+            <?php foreach ($selected_posts as $post): setup_postdata($post); ?>
+
+                <a href="<?php the_permalink(); ?>" class="secondary-post featured-link">
+                    <div class="featured-card" style="bacgkround-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
+
+                        <?php  if( ! empty( $categories ) ) { ?>
+                            <p class="featured-category">
+                                <?php echo esc_html( $categories[0]->name ); ?>
+                            </p>
+                        <?php } ?>
+
+                        <div class="card-meta">
+                            <h3><?php echo get_the_title(); ?></h3>
+                            <p><?php echo get_the_date('F jS, Y'); ?></p>
+                        </div><!-- .card-meta -->
+
+                    </div><!-- .featured-card -->
+                </a><!-- .secondary-post -->
+
+            <?php endforeach; wp_reset_postdata(); ?>
+        </div><!-- .secondary-posts -->
+
+    <?php } else {  // If the user did not select posts, display the latest posts excluding the featured post
+        $args = array(
+            'post_type'      => 'post',
+            'post__not_in'   => array($featured_id),
+            'posts_per_page' => 4
+        );
+        
+        $recent_posts = new WP_Query($args);
+
+        if ( $recent_posts->have_posts() ) { ?>
+            <div class="secondary-posts">
+                <?php while ( $recent_posts->have_posts() ) { $recent_posts->the_post(); ?>
+
+                    <a href="<?php the_permalink(); ?>" class="secondary-post featured-link">
+                        <div class="featured-card" style="bacgkround-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
+
+                            <?php  if( ! empty( $categories ) ) { ?>
+                                <p class="featured-category">
+                                    <?php echo esc_html( $categories[0]->name ); ?>
+                                </p>
+                            <?php } ?>
+
+                            <div class="card-meta">
+                                <h3><?php echo get_the_title(); ?></h3>
+                                <p><?php echo get_the_date('F jS, Y'); ?></p>
+                            </div><!-- .card-meta -->
+
+                        </div><!-- .featured-card -->
+                    </a><!-- .secondary-post -->
+
+                <?php } ?>
+            </div><!-- .secondary-posts -->
+        <?php }
+    } ?>
+
+</div> <!-- .wp-block-posts -->

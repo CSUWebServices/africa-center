@@ -1,1 +1,1 @@
-!function(s){s(".events-wrapper").slick({slidesPerRow:3,slidesToShow:3,slidesToScroll:1,arrows:!0,infinite:!1,responsive:[{breakpoint:1024,settings:{slidesToShow:2,slidesToScroll:1,infinite:!1,dots:!0}},{breakpoint:600,settings:{slidesToShow:1,slidesToScroll:1,infinite:!1}}]})}(jQuery);
+!function($){$(document).ready((function(){$(".slider").slick({slidesPerRow:1,slidesToShow:1,slidesToScroll:1,arrows:!0,dots:!0,infinite:!0})}))}(jQuery);

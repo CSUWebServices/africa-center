@@ -6,6 +6,7 @@
             "key": "field_6009b8bd083a3",
             "label": "Header",
             "name": "header",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,11 +23,12 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ffe0cb7434e5",
-            "label": "Category",
-            "name": "category",
-            "type": "taxonomy",
-            "instructions": "",
+            "key": "field_646bc0fa47646",
+            "label": "Featured Post",
+            "name": "featured_post",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "If not selected, the most recent post will be displayed.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -34,14 +36,71 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "category",
-            "field_type": "select",
+            "post_type": [
+                "post"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
             "allow_null": 0,
-            "add_term": 0,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "id",
-            "multiple": 0
+            "ui": 1
+        },
+        {
+            "key": "field_646bc11c47647",
+            "label": "Select posts?",
+            "name": "select_posts",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "If posts are not manually selected, the most recent posts (excluding the selected featured post) will be displayed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_646bc15247648",
+            "label": "Secondary Posts",
+            "name": "secondary_posts",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "Select 4 posts to show next to the featured post on the homepage.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_646bc11c47647",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 0,
+            "ui": 1
         }
     ],
     "location": [
@@ -61,5 +120,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1626727288
+    "show_in_rest": 0,
+    "modified": 1684783598
 }

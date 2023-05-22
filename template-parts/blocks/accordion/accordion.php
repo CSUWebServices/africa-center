@@ -32,7 +32,7 @@ if( get_field('accordion_type') == 'classic' ) {
 }
 
 if( have_rows('panels') ): ?>
-	<div class="accordion <?php echo esc_attr($className); ?> <?php echo $accordion_type; ?>" data-aos="fade-up">
+	<div class="<?php echo esc_attr($className); ?> <?php echo $accordion_type; ?>" data-aos="fade-up">
 		<?php while( have_rows('panels') ): the_row();
 			$title = get_sub_field('title');
 			$content = get_sub_field('content'); ?>

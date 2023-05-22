@@ -20,6 +20,9 @@ $className = 'slider';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
+if( !empty($block['align']) ) {
+    $className .= ' align' . $block['align'];
+}
 
 // Load values and assign defaults.
 if( have_rows('slider') ): ?>
@@ -30,13 +33,30 @@ if( have_rows('slider') ): ?>
 
 			$image = get_sub_field('image');
 			$title = get_sub_field('title');
-			$text = get_sub_field('text');
-			$link = get_sub_field('link'); ?>
+			$text = get_sub_field('description');
+			$link = get_sub_field('link');
+			$link_url = $link['url'];
+			$link_title = $link['title'];
+			$link_target = $link['target'] ? $link['target'] : '_self'; ?>
 
-			<div class="slide">
+			<div class="slide" style="background-image:url('<?php echo $image; ?>');">
 				<div class="container">
-					
-				</div>
+					<div class="slide-content">
+
+						<?php if( $title ) {
+							echo '<h2>' . $title . '</h2>';
+						} ?>
+
+						<?php if( $text ) {
+							echo '<p>' . $text . '</p>';
+						} ?>
+
+						<?php if( $link ) {
+							echo '<a class="button" href="' . $link_url . '" target="' . $link_target . '">' . $link_title . '</a>';
+						} ?>
+
+					</div><!-- .slide-content -->
+				</div><!-- .container -->
 			</div> <!-- .slide -->
 
 		<?php endwhile; ?>
