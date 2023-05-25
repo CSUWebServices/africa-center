@@ -16,7 +16,7 @@ if( !empty($block['anchor']) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'posts';
+$className = 'wp-block-posts';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -26,28 +26,26 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $header = get_field('header');
-$featured_posts = get_field('featured_post');
-$featured_id = $featured_posts->ID;
+$featured = get_field('featured_post');
+$featured_id = $featured->ID;
 $select_posts = get_field('select_posts'); ?>
 
-<div class="wp-block-posts">
+<?php if( $header ) { ?>
+    <h2 class="section-title"><?php echo $header; ?></h2>
+<?php } ?>
 
-    <?php if( $header ) { ?>
-        <h2 class="section-title"><?php echo $header; ?></h2>
-    <?php }
+<div class="<?php echo $className; ?>">
+    
+    <?php if( $featured ) {
 
-    /*
-    if( $featured_posts ) {
-        foreach ($featured_posts as $featured):
-
-            $categories = get_the_category( $featured->ID );
-            $permalink = get_permalink( $featured->ID );
-            $title = get_the_title( $featured->ID );
-            $thumbnail = get_the_post_thumbnail_url( $featured->ID );
-            $date = get_the_date( 'F jS, Y', $featured->ID ); ?>
+            $categories = get_the_category( $featured_id );
+            $permalink = get_permalink( $featured_id );
+            $title = get_the_title( $featured_id );
+            $thumbnail = get_the_post_thumbnail_url( $featured_id );
+            $date = get_the_date( 'F jS, Y', $featured_id ); ?>
 
             <a href="<?php echo $permalink; ?>" class="featured-post featured-link">
-                <div class="featured-card" style="bacgkround-image:url('<?php echo $thumbnail; ?>');">
+                <div class="featured-card" style="background-image:url('<?php echo $thumbnail; ?>');">
 
                     <?php  if( ! empty( $categories ) ) { ?>
                         <p class="featured-category">
@@ -63,19 +61,18 @@ $select_posts = get_field('select_posts'); ?>
                 </div><!-- .featured-card -->
             </a><!-- .featured-post -->
 
-        <?php endforeach; wp_reset_postdata();
-    } else {
+    <?php } else {
         echo '<h2>Please select a featured post.</h2>';
     }
-    */
 
     // Secondary Posts
     if( $select_posts ) {  // If the user selected manual posts, show those ?>
         <div class="secondary-posts">
-            <?php foreach ($selected_posts as $post): setup_postdata($post); ?>
+            <?php foreach ($selected_posts as $post): setup_postdata($post);
+                $categories = get_the_category(); ?>
 
                 <a href="<?php the_permalink(); ?>" class="secondary-post featured-link">
-                    <div class="featured-card" style="bacgkround-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
+                    <div class="featured-card" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
 
                         <?php  if( ! empty( $categories ) ) { ?>
                             <p class="featured-category">
@@ -105,10 +102,11 @@ $select_posts = get_field('select_posts'); ?>
 
         if ( $recent_posts->have_posts() ) { ?>
             <div class="secondary-posts">
-                <?php while ( $recent_posts->have_posts() ) { $recent_posts->the_post(); ?>
+                <?php while ( $recent_posts->have_posts() ) { $recent_posts->the_post();
+                    $categories = get_the_category(); ?>
 
                     <a href="<?php the_permalink(); ?>" class="secondary-post featured-link">
-                        <div class="featured-card" style="bacgkround-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
+                        <div class="featured-card" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
 
                             <?php  if( ! empty( $categories ) ) { ?>
                                 <p class="featured-category">

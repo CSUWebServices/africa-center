@@ -16,7 +16,7 @@
 }
 
 .top-footer, .bottom-footer {
-	@include inner(1100px);
+	@include inner;
 }
 
 .top-footer {

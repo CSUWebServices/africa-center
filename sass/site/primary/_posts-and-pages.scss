@@ -126,7 +126,7 @@
 
 //***** Body *****
 .entry-content {
-	@include inner(1100px);
+	@include inner;
 	margin-top: 0;
 
 	.elementor a {

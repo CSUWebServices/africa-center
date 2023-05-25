@@ -1,120 +1,84 @@
+.section-title {
+	color: $csu;
+	margin-top: 0;
+	font-family: 'industry-light';
+}
+
 .wp-block-posts {
-	@include section-padding;
-
-	.section-title {
-		@include inner;
-		color: $csu;
-		margin-top: 0;
-		font-family: 'industry-light';
-	}	
+	min-height: 55dvh;
 }
 
-.posts-wrapper {
-	@include section-padding;
-	background: $offwhite;
+.wp-block-posts, .secondary-posts {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
 }
 
-.posts-list {
-	@include inner;
+// Cards
+.featured-link {
+	display: flex;
+	text-decoration: none;
 
-	&.grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(1, 1fr);
-		grid-gap: 1.5rem;
+	&.secondary-post {
 
-		@media #{$medium} {
-			grid-template-columns: repeat(2, 1fr);
+		h3 {
+			font-size: 1em;
 		}
 
-		@media #{$small} {
-			grid-template-columns: repeat(1, 1fr);
+		p {
+			font-size: 0.85em;
+		}
+	}
+}
+
+.featured-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+
+	&:after {
+		content: '';
+		background: rgba(black, 0.5);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	.featured-category {
+		position: absolute;
+		top: 0.5rem;
+		left: 0;
+		margin: 0;
+		padding: 0.25rem 0.5rem;
+	}
+
+	.card-meta {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+
+		h3 {
+			margin-top: 0;
+			margin-bottom: 0.5rem;
+			line-height: 1.2;
+		}
+
+		p {
+			margin: 0;
 		}
 	}
 
-	&.filter {
-
-		.post-card {
-			width: calc((100% / 3) - 1.5rem);
-			margin-bottom: 1.5rem;
-
-			@media #{$medium} {
-				width: calc(50% - 2rem);
-			}
-
-			@media #{$small} {
-				width: calc(100% - 2rem);
-			}
-		}
-	}
-
-	.post-card {
-		display: block;
-		background: white;
-		@include box-shadow;
-		border-top: 0.5rem solid $alfalfa;
-		text-decoration: none;
-		transition: all 0.2s;
-
-		&:hover, &:focus {
-			transform: translate3d(0, -0.25rem, 0);
-			transition: all 0.2s;
-		}
-
-		&:focus {
-			outline: 2px solid $alfalfa;
-		}
-
-		.image-title {
-			background-size: cover;
-			width: 100%;
-			height: 200px;
-			display: flex;
-		    flex-direction: column;
-		    justify-content: flex-end;
-		    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-		    position: relative;
-
-		    &:after {
-		    	content: '';
-		    	position: absolute;
-		    	top: 0;
-		    	right: 0;
-		    	bottom: 0;
-		    	left: 0;
-		    	background: linear-gradient(to bottom, rgba(0,0,0,0.4) 40%, rgba(0,0,0,1) 100%);
-		    }
-
-			h2, h3 {
-				font-size: 1.1em;
-				margin: 0;
-				color: white;
-				padding: 0.5rem 1rem;
-				line-height: 1.2;
-				z-index: 1;
-				font-family: 'industry-book';
-				text-shadow: 1px 1px rgba(black, 0.5);
-			}
-		}
-
-		.card-content {
-			padding: 1rem;
-
-			hr {
-				margin: 0.5rem 0;
-			}
-
-			.date {
-				font-size: 0.9rem;
-				color: lighten($text, 20%);
-				margin: 0;
-				padding: 0.25rem 0;
-			}
-
-			.excerpt {
-				margin: 0;
-			}
-		}
+	* {
+		color: white;
+		z-index: 2;
 	}
 }
 
