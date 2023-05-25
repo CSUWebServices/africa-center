@@ -28,7 +28,8 @@ if( !empty($block['align']) ) {
 $header = get_field('header');
 $featured = get_field('featured_post');
 $featured_id = $featured->ID;
-$select_posts = get_field('select_posts'); ?>
+$select_posts = get_field('select_posts');
+$secondary_posts = get_field('secondary_posts'); ?>
 
 <?php if( $header ) { ?>
     <h2 class="section-title"><?php echo $header; ?></h2>
@@ -68,11 +69,11 @@ $select_posts = get_field('select_posts'); ?>
     // Secondary Posts
     if( $select_posts ) {  // If the user selected manual posts, show those ?>
         <div class="secondary-posts">
-            <?php foreach ($selected_posts as $post): setup_postdata($post);
-                $categories = get_the_category(); ?>
+            <?php if( $secondary_posts ): foreach ($secondary_posts as $post): setup_postdata($post);
+                $categories = get_the_category($post); ?>
 
                 <a href="<?php the_permalink(); ?>" class="secondary-post featured-link">
-                    <div class="featured-card" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
+                    <div class="featured-card" style="background-image:url('<?php echo get_the_post_thumbnail_url($post); ?>');">
 
                         <?php  if( ! empty( $categories ) ) { ?>
                             <p class="featured-category">
@@ -81,14 +82,14 @@ $select_posts = get_field('select_posts'); ?>
                         <?php } ?>
 
                         <div class="card-meta">
-                            <h3><?php echo get_the_title(); ?></h3>
-                            <p><?php echo get_the_date('F jS, Y'); ?></p>
+                            <h3><?php echo get_the_title($post); ?></h3>
+                            <p><?php echo get_the_date('F jS, Y', $post); ?></p>
                         </div><!-- .card-meta -->
 
                     </div><!-- .featured-card -->
                 </a><!-- .secondary-post -->
 
-            <?php endforeach; wp_reset_postdata(); ?>
+            <?php endforeach; wp_reset_postdata(); endif; ?>
         </div><!-- .secondary-posts -->
 
     <?php } else {  // If the user did not select posts, display the latest posts excluding the featured post
