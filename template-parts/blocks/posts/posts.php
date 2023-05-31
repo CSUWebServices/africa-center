@@ -35,7 +35,7 @@ $secondary_posts = get_field('secondary_posts'); ?>
     <h2 class="section-title"><?php echo $header; ?></h2>
 <?php } ?>
 
-<div class="<?php echo $className; ?>">
+<div id="<?php echo $id ?>" class="<?php echo $className; ?>">
     
     <?php if( $featured ) {
 

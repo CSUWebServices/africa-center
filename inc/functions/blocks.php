@@ -41,6 +41,17 @@ function register_acf_block_types() {
             'keywords'          => array( 'staff', 'employees', 'people' ),
         ));
 
+        // fellowship recipients
+        acf_register_block_type(array(
+            'name'              => 'fellowship-recipients',
+            'title'             => __('Fellowship Recipients'),
+            'description'       => __('A list of Fellowship Recipients with links to their pages.'),
+            'render_template'   => 'template-parts/blocks/fellowship-recipients/fellowship-recipients.php',
+            'category'          => 'ramblocks',
+            'icon'              => 'welcome-learn-more',
+            'keywords'          => array( 'fellowship', 'recipients', 'graduate students', 'grad students' ),
+        ));
+
         // media cta
         acf_register_block_type(array(
             'name'              => 'media-cta',
@@ -147,6 +158,7 @@ function csu_allowed_block_types( $allowed_blocks ) {
  
 	return array(
         'acf/posts',
+        'acf/fellowship-recipients',
         'acf/media-cta',
         'acf/slider',
         'acf/link-blocks',
