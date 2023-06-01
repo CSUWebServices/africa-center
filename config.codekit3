@@ -161,6 +161,14 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/archive-fellowship_recipient.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/archive-fellowship_recipient.php",
+      "oF" : 0
+    },
     "\/archive.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3410,6 +3418,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sidebar.php",
+      "oF" : 0
+    },
+    "\/single-fellowship_recipient.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-fellowship_recipient.php",
       "oF" : 0
     },
     "\/single.php" : {

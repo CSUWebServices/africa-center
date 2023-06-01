@@ -18,93 +18,108 @@
 		@media #{$xs} {
 			grid-template-columns: repeat(1, 1fr);
 		}
+	}
 
-		.recipient-link {
-			display: flex;
-			width: 100%;
-			height: 100%;
-			border-radius: 50%;
-			color: white;
-			text-decoration: none;
-			position: relative;
+	.recipient-link {
 
-			&:nth-of-type(even) {
-				transform: translateY(50%);
-
-				@media #{$medium} {
-					transform: none;
-				}
+		&:nth-of-type(even) {
+			transform: translateY(50%);
+	
+			@media #{$medium} {
+				transform: none;
 			}
+		}
+	}
+}
 
-			&:after {
-				content: '';
-				opacity: 0;
-				background: rgba(black, 0.6);
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: 1;
-				border-radius: 50%;
-				transition: all 0.2s;
+.recipient-link {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	color: white;
+	text-decoration: none;
+	position: relative;
 
-				@media #{$medium} {
-					opacity: 1;
-				}
-			}
+	&:after {
+		content: '';
+		opacity: 0;
+		background: rgba(black, 0.6);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		border-radius: 50%;
+		transition: all 0.2s;
 
-			&:hover, &:focus {
+		@media #{$medium} {
+			opacity: 1;
+		}
+	}
 
-				&:after {
-					opacity: 1;
-					transition: all 0.2s;
-				}
+	&:hover, &:focus {
 
-				.recipient-container {
-
-					h3, p {
-						visibility: visible;
-						opacity: 1;
-						transition: all 0.2s;
-					}
-				}
-			}
+		&:after {
+			opacity: 1;
+			transition: all 0.2s;
 		}
 
 		.recipient-container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			background-size: cover;
-			width: 100%;
-			height: 100%;
-			aspect-ratio: 1 / 1;
-			border-radius: 50%;
 
 			h3, p {
-				text-align: center;
-				margin: 0;
-				color: white;
-				visibility: hidden;
-				opacity: 0;
-				z-index: 2;
+				visibility: visible;
+				opacity: 1;
 				transition: all 0.2s;
-
-				@media #{$medium} {
-					visibility: visible;
-					opacity: 1;
-				}
-			}
-
-			h3 {
-
-			}
-
-			p {
-
 			}
 		}
+	}
+}
+
+.recipient-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+
+	h3, p {
+		text-align: center;
+		margin: 0;
+		color: white;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 2;
+		transition: all 0.2s;
+
+		@media #{$medium} {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	h3 {
+		padding-bottom: 1rem;
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		&:after {
+			content: '';
+			width: 5rem;
+			height: 0.33rem;
+			background: $canyon;
+			position: absolute;
+			bottom: 0.25em;
+		}
+	}
+
+	p {
+
 	}
 }

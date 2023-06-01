@@ -72,7 +72,8 @@
     "has_archive": true,
     "has_archive_slug": "fellowship-recipients",
     "rewrite": {
-        "permalink_rewrite": "post_type_key",
+        "permalink_rewrite": "custom_permalink",
+        "slug": "fellowship-recipients",
         "with_front": "1",
         "feeds": "0",
         "pages": "1"
@@ -82,5 +83,5 @@
     "can_export": true,
     "delete_with_user": false,
     "register_meta_box_cb": "",
-    "modified": 1685484167
+    "modified": 1685650819
 }
