@@ -46,7 +46,7 @@ if( has_post_thumbnail() ) { ?>
 								<?php } ?>
 							</ul>
 						<?php } ?>
-						<?php the_date(); ?>
+						<p class="post-date"><?php the_date(); ?></p>
 					</div><!-- .entry-meta -->
 				</div><!-- .post-meta-wrapper-->
 				<?php endif; ?>

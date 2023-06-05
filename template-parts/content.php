@@ -21,6 +21,12 @@
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 
+			if( has_tag() ) {
+				echo '<div class="post-tags">';
+					the_tags('Tags: ', ', ');
+				echo '</div>';
+			}
+
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'csu' ),
 				'after'  => '</div>',

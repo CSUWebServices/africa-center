@@ -44,10 +44,22 @@
 	background-position: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
+	position: relative;
+
+	&:after {
+		content: '';
+		background: linear-gradient(0deg, rgba($slate,0.852000175070028) 30%, rgba($slate,0.5018601190476191) 60%, rgba($slate,0.1545211834733894) 100%);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 0;
+	}
 
 	.entry-header-wrapper {
-	
+		z-index: 1;
 	}
 
 	.title-subtitle {
@@ -55,7 +67,7 @@
 	}
 
 	.title-container {
-		background: rgba($csu, 0.9);
+		// background: rgba($csu, 0.9);
 		padding: 3em 0;
 	}
 
@@ -100,9 +112,9 @@
 
 	.subtitle {
 		@include proxsemi;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		margin-bottom: 0;
-		margin-top: 2rem;
+		margin-top: 0.5rem;
 	}
 
 	&.no-header-image {
@@ -175,16 +187,16 @@
 		}
 
 		.title-subtitle {
-			margin-bottom: 3rem;
+			margin-bottom: 1rem;
 		}
 
 		.entry-title {
-			margin-bottom: 0.67em;
+			margin-bottom: 0;
 		}
 	}
 
 	.post-header {
-		text-align: center;
+		text-align: left;
 		margin-bottom: 3rem;
 
 		&.post-image {
@@ -193,6 +205,8 @@
 			.entry-title {
 				color: white;
 				margin-top: 0;
+				margin-bottom: 0;
+				text-shadow: 1px 1px rgba(black, 0.4);
 			}
 
 			.entry-meta, .entry-meta a {
@@ -214,18 +228,13 @@
 					}
 				}
 			}
-
-			.entry-header-wrapper {
-				background: $csu;
-
-				&.transparent {
-					background: rgba($csu, 0.85);
-				}
-			}
 		}
 
 		&.no-post-image {
 			
+			.entry-header-wrapper {
+				background: $csu;
+			}
 		}
 
 		.entry-header-container {
@@ -234,10 +243,10 @@
 
 		.entry-title {
 			display: flex;
-			justify-content: center;
+			justify-content: flex-start;
 			padding: 0;
 			margin-top: 0;
-			margin-bottom: 0.67em;
+			margin-bottom: 0;
 			padding-top: 1.5rem;
 			font-size: 3rem;
 
@@ -257,6 +266,16 @@
 
 	.entry-meta {
 		padding-bottom: 1.5rem;
+		display: flex;
+		align-items: center;
+
+		@media #{$small} {
+			display: block;
+		}
+
+		.post-date {
+			margin: 0;
+		}
 	}
 
 	.post-image-wrapper {
@@ -283,8 +302,8 @@
 		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		margin: 1rem 0;
+		justify-content: flex-start;
+		margin: 1rem 3rem 1rem 0;
 		padding: 0;
 
 		li {
@@ -310,8 +329,12 @@
 		}
 	}
 
+	.post-tags {
+		margin-top: 3rem;
+	}
+
 	.entry-content, .entry-footer {
-		@include inner(70ch);
+		@include inner(900px);
 	}
 }
 
