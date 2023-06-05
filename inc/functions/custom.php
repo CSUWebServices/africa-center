@@ -121,3 +121,13 @@ function csu_add_unfiltered_html_capability_to_editors( $caps, $cap, $user_id ) 
   return $caps;
 }
 add_filter( 'map_meta_cap', 'csu_add_unfiltered_html_capability_to_editors', 1, 3 );
+
+
+// Change archive titles
+add_filter( 'get_the_archive_title', function( $title ) {
+   if ( is_home() ) {
+       $title = 'News';
+   }
+
+   return $title;
+}, 50 );

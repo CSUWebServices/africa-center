@@ -17,23 +17,8 @@ get_header(); ?>
 
 			<?php get_template_part('template-parts/archive', 'header'); ?>
 
-			<section class="posts-filter-wrapper">
-				<div class="posts-filter-inner">
-					<h2 id="filter-title">Filter by Category</h2>
-					<div class="posts-filter" data-aos="zoom-in-left" role="radiogroup">
-						<button data-filter="*">All</button>
-						<?php 
-							$categories = get_categories();
-							foreach ($categories as $category) {
-								echo '<button data-filter=".category-' . $category->slug . '" aria-checked="false" aria-labelledby="filter-title" role="radio" aria-checked="false">' . $category->name . '</button>';
-							}
-						?>
-					</div> <!-- .posts-filter -->
-				</div>
-			</section>
-
 			<section class="posts-wrapper">
-				<div class="posts-list filter">
+				<div class="posts-list">
 
 					<?php
 					/* Start the Loop */
@@ -48,21 +33,24 @@ get_header(); ?>
 						}
 						?>
 
-						<a class="post-card <?php foreach( $categories as $category ) { echo 'category-' . $category->slug . ' '; } ?>" href="<?php echo get_permalink(); ?>">
-							<div class="image-title" style="background-image:url('<?php echo $image_link; ?>');">
-				                <h2><?php echo get_the_title(); ?></h2>
-				            </div> <!-- .image-title -->
-		                    <div class="card-content">
-		                        <?php echo '<p class="date">' . get_the_date() . '</p>'; ?>
-		                        <?php if( has_excerpt() ) {
-		                            echo '<p class="excerpt">' . get_the_excerpt() . '</p>';
-		                        } ?>
-		                    </div> <!-- .card-content -->
-		        		</a>
+						<a href="<?php the_permalink(); ?>" class="featured-link">
+							<div class="featured-card" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
+
+								<?php  if( ! empty( $categories ) ) { ?>
+									<p class="featured-category">
+										<?php echo esc_html( $categories[0]->name ); ?>
+									</p>
+								<?php } ?>
+
+								<div class="card-meta">
+									<h3><?php echo get_the_title(); ?></h3>
+									<p><?php echo get_the_date('F jS, Y'); ?></p>
+								</div><!-- .card-meta -->
+
+							</div><!-- .featured-card -->
+						</a><!-- .secondary-post -->
 
 					<?php endwhile;
-
-					the_posts_pagination();
 
 					else :
 
@@ -72,6 +60,8 @@ get_header(); ?>
 
 				</div> <!-- .posts-list -->
 			</section>
+
+			<?php the_posts_pagination(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

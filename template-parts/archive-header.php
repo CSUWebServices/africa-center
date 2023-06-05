@@ -14,7 +14,7 @@ if( $header_image ) { ?>
 			<div class="title-container">
 				<div class="title-inner">
 					<?php // the_archive_title( '<h1 class="large-title">', '</h1>' ); ?>
-					<h1 class="large-title">Stories</h1>
+					<h1 class="large-title"><?php the_archive_title(); ?></h1>
 				</div> <!-- .title-only -->
 			</div> <!-- .title-container -->
 		</div> <!-- .entry-header-wrapper -->

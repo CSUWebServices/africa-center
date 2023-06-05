@@ -436,6 +436,29 @@
 	} 
 }
 
+.posts-wrapper {
+	@include inner;
+	@include section-margin;
+
+	.posts-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1.5rem;
+
+		@media #{$medium} {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media #{$small} {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.featured-link {
+			min-height: 40dvh;
+		}
+	}
+}
+
 
 //********** Block fixes **********
 .player .vp-video-wrapper .vp-preview {
