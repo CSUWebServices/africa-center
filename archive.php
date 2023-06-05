@@ -17,37 +17,51 @@ get_header(); ?>
 
 			<?php get_template_part('template-parts/archive', 'header'); ?>
 
-			<div class="posts-list">
+			<section class="posts-wrapper">
+				<div class="posts-list">
 
-				<?php
-				/* Start the Loop */
-				while ( have_posts() ) : the_post(); ?>
+					<?php
+					/* Start the Loop */
+					while ( have_posts() ) : the_post();
 
-					<a class="post-card" href="<?php echo get_permalink(); ?>" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-	        			<?php /* if($image) {
-	        				echo $image;
-	        			} */ ?>
-	                    <div class="card-content">
-	                        <h3><?php echo get_title(); ?></h3>
-	                        <hr />
-	                        <?php echo '<p class="date">' . get_the_date() . '</p>'; ?>
-	                        <?php if( has_excerpt() ) {
-	                            echo '<p class="excerpt">' . get_excerpt() . '</p>';
-	                        } ?>
-	                    </div> <!-- .card-content -->
-	        		</a>
+						$categories = get_the_category();
+						$image = get_the_post_thumbnail( $post->ID, 'large' );
+						if($image) {
+						    $image_link = get_the_post_thumbnail_url( $post->ID, 'large' );
+						} else {
+						    $image_link = get_field('default_image', 'option');
+						}
+						?>
 
-				<?php endwhile;
+						<a href="<?php the_permalink(); ?>" class="featured-link" data-aos="fade-up">
+							<div class="featured-card" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
 
-				the_posts_pagination();
+								<?php  if( ! empty( $categories ) ) { ?>
+									<p class="featured-category">
+										<?php echo esc_html( $categories[0]->name ); ?>
+									</p>
+								<?php } ?>
 
-			else :
+								<div class="card-meta">
+									<h3><?php echo get_the_title(); ?></h3>
+									<p><?php echo get_the_date('F jS, Y'); ?></p>
+								</div><!-- .card-meta -->
 
-				get_template_part( 'template-parts/content', 'none' );
+							</div><!-- .featured-card -->
+						</a><!-- .secondary-post -->
 
-			endif; ?>
+					<?php endwhile;
 
-		</div> <!-- .posts-list -->
+					else :
+
+						get_template_part( 'template-parts/content', 'none' );
+
+					endif; ?>
+
+				</div> <!-- .posts-list -->
+			</section>
+
+			<?php the_posts_pagination(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

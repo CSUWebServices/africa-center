@@ -33,7 +33,7 @@ get_header(); ?>
 						}
 						?>
 
-						<a href="<?php the_permalink(); ?>" class="featured-link">
+						<a href="<?php the_permalink(); ?>" class="featured-link" data-aos="fade-up">
 							<div class="featured-card" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
 
 								<?php  if( ! empty( $categories ) ) { ?>

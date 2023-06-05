@@ -42,7 +42,7 @@ if( has_post_thumbnail() ) { ?>
 						<?php if ( ! empty( $categories ) ) { ?>
 							<ul class="post-categories">
 								<?php foreach( $categories as $category ) { ?>
-									<li><a href="<?php echo get_site_url() . '/blog/#filter=.category-' . $category->slug; ?>" rel="category"><?php echo $category->name; ?></a></li>
+									<li><a href="<?php echo get_category_link($category); ?>" rel="category"><?php echo $category->name; ?></a></li>
 								<?php } ?>
 							</ul>
 						<?php } ?>
