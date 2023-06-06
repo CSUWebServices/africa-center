@@ -13,12 +13,16 @@
 		background: transparent;
 		min-height: 0;
 
-		.title-subtitle {
+		&:after {
+			display: none;
+		}
 
+		.title-subtitle {
+			color: $csu;
 		}
 
 		.page-title {
-			color: $text;
+			color: $csu;
 			font-size: 2rem;
 			line-height: 1.2;
 			margin-top: 0;
@@ -36,6 +40,11 @@
 				font-size: 1.7rem;
 			}
 		}
+
+		.entry-meta {
+			margin-bottom: 1rem;
+			font-style: italic;
+		}
 	}
 
 	article {
@@ -48,6 +57,19 @@
 
 		.entry-summary, p {
 			margin: 0;
+		}
+
+		.entry-summary {
+			display: flex;
+			justify-content: space-between;
+
+			@media #{$small} {
+				flex-wrap: wrap;
+			}
+
+			img {
+				margin-top: 0.5rem;
+			}
 		}
 	}
 
