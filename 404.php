@@ -13,8 +13,10 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'That page can&rsquo;t be found.', 'csu' ); ?></h1>
+				<header class="page-header no-header-image">
+					<div class="title-inner">
+						<h1 class="page-title"><?php esc_html_e( 'That page can&rsquo;t be found.', 'csu' ); ?></h1>
+					</div>
 				</header><!-- .page-header -->
 
 				<div class="page-content">

@@ -121,6 +121,11 @@
 		min-height: 0;
 		background-size: default;
 
+		&:after {
+			background: none;
+			display: none;
+		}
+
 		.title-container {
 			background: white;
 		}
