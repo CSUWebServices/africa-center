@@ -5,8 +5,9 @@
         {
             "key": "field_5fd3c5bf59cca",
             "label": "Image",
-            "name": "default_image",
-            "type": "image",
+            "name": "default_images",
+            "aria-label": "",
+            "type": "gallery",
             "instructions": "Choose a default image to show on page titles if no featured image is assigned on a particular page.",
             "required": 0,
             "conditional_logic": 0,
@@ -16,15 +17,18 @@
                 "id": ""
             },
             "return_format": "url",
-            "preview_size": "medium",
             "library": "all",
+            "min": "",
+            "max": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "insert": "append",
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -44,5 +48,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1607714542
+    "show_in_rest": 0,
+    "modified": 1686083817
 }
