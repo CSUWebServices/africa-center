@@ -5,7 +5,7 @@ $header_image = wp_get_attachment_url( $image_id );
 $default_image = get_field('default_image', 'option');
 $position = get_field('image_position');
 if( $header_image ) { ?>
-	<header class="page-header entry-header custom-header-image" style="background-image:url('<?php echo $header_image; ?>'); background-position: <?php if($position == 'top') {echo 'top';} elseif($position == 'center') {echo 'center';} elseif($position == 'bottom') {echo 'bottom';} ?>">
+	<header class="page-header entry-header custom-header-image" style="background-image:url('<?php echo $header_image; ?>'); background-position: <?php echo '0% ' . $position . '%'; ?>">
 <?php } else { ?>
 	<header class="page-header entry-header default-header-image" style="background-image:url('<?php echo $default_image; ?>');">
 <?php } ?>

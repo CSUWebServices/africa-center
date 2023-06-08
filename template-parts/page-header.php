@@ -17,12 +17,12 @@ if( has_post_thumbnail() ) {
 <?php $subtitle = get_field('subtitle'); ?>
 	<div class="title-container" data-aos="fade-up" data-aos-duration="1000">
 		<div class="title-inner">
+			<?php the_title( '<h1 class="large-title">', '</h1>' ); ?>
 			<?php if( $subtitle ): ?>
 				<div class="subtitle-inner">
 					<?php echo '<h2 class="small-title">' . $subtitle . '</h2>'; ?>
 				</div> <!-- .subtitle-container -->
 			<?php endif; ?>
-			<?php the_title( '<h1 class="large-title">', '</h1>' ); ?>
 		</div> <!-- .title-only -->
 	</div> <!-- .title-container -->
 
@@ -30,16 +30,16 @@ if( has_post_thumbnail() ) {
 
 <?php } else { // Display the header image ?>
 
-<header class="page-header entry-header" style="background-image:url('<?php echo $header_image; ?>'); background-position: <?php if($position == 'top') {echo 'top';} elseif($position == 'center') {echo 'center';} elseif($position == 'bottom') {echo 'bottom';} ?>">
+<header class="page-header entry-header" style="background-image:url('<?php echo $header_image; ?>'); background-position: <?php echo '0% ' . $position . '%'; ?>">
 <?php $subtitle = get_field('subtitle'); ?>
 	<div class="title-container" data-aos="fade-up" data-aos-duration="1000">
 		<div class="title-inner">
+			<?php the_title( '<h1 class="large-title">', '</h1>' ); ?>
 			<?php if( $subtitle ): ?>
 				<div class="subtitle-inner">
 					<?php echo '<h2 class="small-title">' . $subtitle . '</h2>'; ?>
 				</div> <!-- .subtitle-container -->
 			<?php endif; ?>
-			<?php the_title( '<h1 class="large-title">', '</h1>' ); ?>
 		</div> <!-- .title-only -->
 	</div> <!-- .title-container -->
 

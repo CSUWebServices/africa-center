@@ -3,7 +3,7 @@ $header_image = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 $default_image = get_field('default_image', 'option');
 $position = get_field('image_position');
 if( has_post_thumbnail() ) { ?>
-	<header class="post-header entry-header post-image" style="background-image:url('<?php echo $header_image; ?>'); background-position: <?php if($position == 'top') {echo 'top';} elseif($position == 'center') {echo 'center';} elseif($position == 'bottom') {echo 'bottom';} ?>">
+	<header class="post-header entry-header post-image" style="background-image:url('<?php echo $header_image; ?>'); background-position: <?php echo '0% ' . $position . '%'; ?>">
 <?php } else { ?>
 	<header class="post-header entry-header post-image" style="background-image:url('<?php echo $default_image; ?>">
 <?php } ?>

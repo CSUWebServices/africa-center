@@ -6,6 +6,7 @@
             "key": "field_58015f4db1035",
             "label": "Image Position",
             "name": "image_position",
+            "aria-label": "",
             "type": "range",
             "instructions": "",
             "required": 0,
@@ -37,13 +38,6 @@
                 "operator": "==",
                 "value": "post"
             }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "passions"
-            }
         ]
     ],
     "menu_order": 0,
@@ -54,5 +48,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1606867653
+    "show_in_rest": 0,
+    "modified": 1686256569
 }

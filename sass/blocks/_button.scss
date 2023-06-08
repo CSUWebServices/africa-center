@@ -5,6 +5,13 @@
 		.wp-block-button__link {
 			@include button-style;
 		}
+
+		&.is-style-outline {
+
+			.wp-block-button__link {
+				@include button-style-outline;
+			}
+		}
 	}
 }
 

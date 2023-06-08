@@ -68,27 +68,36 @@
 
 	.title-container {
 		// background: rgba($csu, 0.9);
-		padding: 3em 0;
+		padding: 2em 0;
+		z-index: 1;
 	}
 
-	.title-inner, .subtitle-inner {
+	.title-inner {
 		@include inner;
 	}
 
 	.small-title {
-		background: $aggie;
 		position: relative;
 		display: inline-block;
 		text-transform: uppercase;
 		@include proxsemi;
-		margin: 0;
-		padding: 0 1rem;
+		margin-bottom: 0;
+		margin-top: 0.5rem;
 		color: white;
 		font-size: 1.3em;
-		letter-spacing: 1px;
 
 		@media #{$small} {
 			font-size: 1.1em;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -0.5rem;
+			left: 0;
+			width: 8rem;
+			height: 0.25rem;
+			background: $canyon;
 		}
 	}
 

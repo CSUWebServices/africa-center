@@ -235,7 +235,7 @@
 		background-size: cover!important;
 		padding: 1.5rem 1rem;
 		background: $csu;
-		min-height: 15rem;
+		min-height: 50dvh;
 
 		&:hover, &:focus {
 			text-decoration: none;
@@ -274,7 +274,7 @@
 		}
 
 		&:focus-visible {
-			outline: 2px solid $alfalfa;
+			outline: 2px solid $canyon;
 		}
 	}
 
@@ -290,7 +290,7 @@
 			position: absolute;
 			bottom: -1rem;
 			left: 0;
-			background: $alfalfa;
+			background: $canyon;
 			width: 100%;
 			height: 0.25rem;
 			opacity: 0;

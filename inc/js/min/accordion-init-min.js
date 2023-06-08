@@ -1,0 +1,1 @@
+!function($){$(document).ready((function(){$(".accordion-classic").accordion({collapsible:!0,heightStyle:"content"}),$(".accordion-toggle > div").accordion({collapsible:!0,active:!1,heightStyle:"content"})}))}(jQuery);

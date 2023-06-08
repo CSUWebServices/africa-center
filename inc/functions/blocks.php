@@ -53,26 +53,26 @@ function register_acf_block_types() {
         ));
 
         // media cta
-        acf_register_block_type(array(
-            'name'              => 'media-cta',
-            'title'             => __('Media Call to Action'),
-            'description'       => __('A call to action with a video or image background'),
-            'render_template'   => 'template-parts/blocks/cta/media-cta.php',
-            'category'          => 'ramblocks',
-            'icon'              => 'cover-image',
-            'keywords'          => array( 'video', 'cta', 'call to action', 'cover' ),
-        ));
+        // acf_register_block_type(array(
+        //     'name'              => 'media-cta',
+        //     'title'             => __('Media Call to Action'),
+        //     'description'       => __('A call to action with a video or image background'),
+        //     'render_template'   => 'template-parts/blocks/cta/media-cta.php',
+        //     'category'          => 'ramblocks',
+        //     'icon'              => 'cover-image',
+        //     'keywords'          => array( 'video', 'cta', 'call to action', 'cover' ),
+        // ));
 
         // link blocks
-        acf_register_block_type(array(
-            'name'              => 'link-blocks',
-            'title'             => __('Link Blocks'),
-            'description'       => __('A block of images with links'),
-            'render_template'   => 'template-parts/blocks/link-blocks/link-blocks.php',
-            'category'          => 'ramblocks',
-            'icon'              => 'images-alt',
-            'keywords'          => array( 'links', 'blocks', 'call to action', 'cta' ),
-        ));
+        // acf_register_block_type(array(
+        //     'name'              => 'link-blocks',
+        //     'title'             => __('Link Blocks'),
+        //     'description'       => __('A block of images with links'),
+        //     'render_template'   => 'template-parts/blocks/link-blocks/link-blocks.php',
+        //     'category'          => 'ramblocks',
+        //     'icon'              => 'images-alt',
+        //     'keywords'          => array( 'links', 'blocks', 'call to action', 'cta' ),
+        // ));
 
         // link grid
         acf_register_block_type(array(
@@ -86,21 +86,21 @@ function register_acf_block_types() {
         ));
 
         // events
-        acf_register_block_type(array(
-            'name'              => 'events-block',
-            'title'             => __('Events'),
-            'description'       => __('A block to display a category of events'),
-            'render_template'   => 'template-parts/blocks/events/events.php',
-            'category'          => 'ramblocks',
-            'icon'              => 'calendar-alt',
-            'keywords'          => array( 'event', 'events', 'calendar' ),
-            'enqueue_assets'    => function(){
-                wp_enqueue_style( 'slick', get_template_directory_uri() . '/inc/plugins/slick/slick.css', array(), null, 'all' );
-                wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/inc/plugins/slick/slick-theme.css', array(), null, 'all' );
-                wp_enqueue_script( 'slick', get_template_directory_uri() . '/inc/plugins/slick/slick.min.js', array( 'jquery' ), null, true );
-                wp_enqueue_script( 'slick-init', get_template_directory_uri() . '/inc/js/min/slick-init-min.js', array( 'jquery' ), null, true );
-            },
-        ));
+        // acf_register_block_type(array(
+        //     'name'              => 'events-block',
+        //     'title'             => __('Events'),
+        //     'description'       => __('A block to display a category of events'),
+        //     'render_template'   => 'template-parts/blocks/events/events.php',
+        //     'category'          => 'ramblocks',
+        //     'icon'              => 'calendar-alt',
+        //     'keywords'          => array( 'event', 'events', 'calendar' ),
+        //     'enqueue_assets'    => function(){
+        //         wp_enqueue_style( 'slick', get_template_directory_uri() . '/inc/plugins/slick/slick.css', array(), null, 'all' );
+        //         wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/inc/plugins/slick/slick-theme.css', array(), null, 'all' );
+        //         wp_enqueue_script( 'slick', get_template_directory_uri() . '/inc/plugins/slick/slick.min.js', array( 'jquery' ), null, true );
+        //         wp_enqueue_script( 'slick-init', get_template_directory_uri() . '/inc/js/min/slick-init-min.js', array( 'jquery' ), null, true );
+        //     },
+        // ));
 
         // accordion
         acf_register_block_type(array(
@@ -151,47 +151,47 @@ add_action('acf/init', 'register_acf_block_types');
 
 
 // De-register unnecessary blocks
-add_filter( 'allowed_block_types', 'csu_allowed_block_types' );
+// add_filter( 'allowed_block_types', 'csu_allowed_block_types' );
 
  
-function csu_allowed_block_types( $allowed_blocks ) {
+// function csu_allowed_block_types( $allowed_blocks ) {
  
-	return array(
-        'acf/posts',
-        'acf/fellowship-recipients',
-        'acf/media-cta',
-        'acf/slider',
-        'acf/link-blocks',
-        'acf/link-grid',
-        'acf/events-block',
-        'acf/staff',
-        'acf/accordion',
-        'acf/expanding-panels',
-        'core/columns',
-        'core/cover',
-		'core/image',
-		'core/paragraph',
-        'core/heading',
-        'core/group',
-        'core/list',
-        'core/gallery',
-        'core/quote',
-        'core/file',
-        'core/video',
-        'core/table',
-        'core/code',
-        'core/html',
-        'core/pullquote',
-        'core/buttons',
-        'core/text-columns',
-        'core/media-text',
-        'core/separator',
-        'core/spacer',
-        'core/archives',
-        'core/shortcode',
-	);
+// 	return array(
+//         'acf/posts',
+//         'acf/fellowship-recipients',
+//         'acf/media-cta',
+//         'acf/slider',
+//         'acf/link-blocks',
+//         'acf/link-grid',
+//         'acf/events-block',
+//         'acf/staff',
+//         'acf/accordion',
+//         'acf/expanding-panels',
+//         'core/columns',
+//         'core/cover',
+// 		'core/image',
+// 		'core/paragraph',
+//         'core/heading',
+//         'core/group',
+//         'core/list',
+//         'core/gallery',
+//         'core/quote',
+//         'core/file',
+//         'core/video',
+//         'core/table',
+//         'core/code',
+//         'core/html',
+//         'core/pullquote',
+//         'core/buttons',
+//         'core/text-columns',
+//         'core/media-text',
+//         'core/separator',
+//         'core/spacer',
+//         'core/archives',
+//         'core/shortcode',
+// 	);
  
-}
+// }
 
 
 // Register custom block pattern categories

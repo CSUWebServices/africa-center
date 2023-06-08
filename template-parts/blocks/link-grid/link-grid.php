@@ -27,12 +27,12 @@ if( !empty($block['align']) ) {
 // Load values and assign defaults.
 $count = count( get_field('link_grid') );
 if( have_rows('link_grid') ): ?>
-	<div class="link-grid <?php echo esc_attr($className); ?> <?php echo 'grid-' . $count; ?>" data-aos="fade-up">
+	<div class="link-grid <?php echo esc_attr($className); ?> <?php echo 'grid-' . $count; ?>">
 		<?php while( have_rows('link_grid') ): the_row();
 			$link = get_sub_field('link');
 			$image = get_sub_field('image'); ?>
 
-			<a class="link-grid-item item-<?php echo get_row_index(); ?> <?php if($image): echo 'link-block-image '; endif; ?>" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" style="background-image:url('<?php echo $image; ?>');">
+			<a class="link-grid-item item-<?php echo get_row_index(); ?> <?php if($image): echo 'link-block-image '; endif; ?>" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" style="background-image:url('<?php echo $image; ?>');" data-aos="flip-right">
 				<h3><?php echo $link['title']; ?></h3>
 			</a>
 		<?php endwhile; ?>
