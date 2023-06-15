@@ -1,6 +1,8 @@
 <?php
 $header_image = get_the_post_thumbnail_url( get_the_ID(), 'full' );
-$default_image = get_field('default_image', 'option');
+$default_images = get_field('default_images', 'option');
+shuffle($default_images);
+$default_image = $default_images[0];
 $position = get_field('image_position');
 if( has_post_thumbnail() ) { ?>
 	<header class="post-header entry-header post-image" style="background-image:url('<?php echo $header_image; ?>'); background-position: <?php echo '0% ' . $position . '%'; ?>">

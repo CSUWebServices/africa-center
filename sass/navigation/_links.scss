@@ -67,3 +67,27 @@ a {
 		}
 	}
 }
+
+.text-link {
+
+	a {
+		color: $csu;
+		text-decoration: none;
+
+		&:after {
+			content: '»';
+			display: inline-block;
+			color: $canyon;
+			margin-left: 0.25rem;
+			transition: all 0.1s;
+		}
+
+		&:hover, &:focus {
+			text-decoration: underline;
+
+			&:after {
+				text-decoration: none;
+			}
+		}
+	}
+}

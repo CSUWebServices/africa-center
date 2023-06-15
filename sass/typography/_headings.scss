@@ -14,14 +14,26 @@ h1, h2, h3, h4, h5, h6 {
 // Styles defined in _mixins-master.scss
 h1 {
 	@include h1-style;
+
+	strong {
+		font-family: 'industry-demi';
+	}
 }
 
 h2 {
 	@include h2-style;
+
+	strong {
+		font-family: 'industry-demi';
+	}
 }
 
 h3 {
 	@include h3-style;	
+
+	strong {
+		font-family: 'industry-demi';
+	}
 }
 
 h4, h5, h6 {

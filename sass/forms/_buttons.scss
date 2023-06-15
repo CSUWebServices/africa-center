@@ -10,7 +10,7 @@ input[type="submit"],
 	border-radius: 0;
 	background: $color__background-button;
 	box-shadow: none;
-	color: $csu;
+	color: white;
 	font-size: 1.2em;
 	font-family: 'industry-demi';
 	outline-color: $csu;
@@ -29,7 +29,7 @@ input[type="submit"],
 	}
 
 	&:hover, &:focus {
-		color: darken($csu, 5%);
+		color: white;
 		box-shadow: 0 0.25rem 0.5rem rgba(black, 0.3);
 		transform: translate3d(0, -2px, 0);
 		transition: all 0.2s;

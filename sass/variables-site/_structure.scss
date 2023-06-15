@@ -7,3 +7,38 @@ $small: "only screen and (max-width: 800px)";
 $smedium: "only screen and (max-width: 1050px)";
 $medium: "only screen and (max-width: 1200px)";
 $large: "only screen and (min-width: 1201px)";
+
+// Width classes
+.narrow {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	&-300 {
+		max-width: 300px;
+	}
+
+	&-400 {
+		max-width: 400px;
+	}
+
+	&-500 {
+		max-width: 500px;
+	}
+
+	&-600 {
+		max-width: 600px;
+	}
+
+	&-700 {
+		max-width: 700px;
+	}
+
+	&-800 {
+		max-width: 800px;
+	}
+
+	&-900 {
+		max-width: 900px;
+	}
+}

@@ -300,11 +300,14 @@ add_theme_support( 'editor-color-palette', array(
 // Disables custom colors in block color palette.
 add_theme_support( 'disable-custom-colors' );
 
+// Block style support
+add_theme_support( 'wp-block-styles' );
+
 // Add width support
 add_theme_support( 'align-wide' );
 
 // Add custom unit support
-add_theme_support( 'custom-units', 'rem', 'em', 'px', 'vh', 'vw' );
+add_theme_support( 'custom-units', 'rem', 'em', 'px', 'vh', 'vw', 'dvh' );
 
 // Add custom spacing support
 add_theme_support('custom-spacing');
