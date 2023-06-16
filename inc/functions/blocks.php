@@ -127,6 +127,17 @@ function register_acf_block_types() {
             'keywords'          => array( 'expanding panels', 'panels', 'toggle' ),
         ));
 
+        // icon buttons
+        acf_register_block_type(array(
+            'name'              => 'icon-buttons',
+            'title'             => __('Icon Buttons'),
+            'description'       => __('Panels that expand and link to other pages'),
+            'render_template'   => 'template-parts/blocks/icon-buttons/icon-buttons.php',
+            'category'          => 'ramblocks',
+            'icon'              => 'button',
+            'keywords'          => array( 'icons', 'buttons' ),
+        ));
+
         // slider
         acf_register_block_type(array(
             'name'              => 'slider',

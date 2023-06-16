@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Link Blocks Template.
+ * Icon Buttons Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -10,13 +10,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'link-blocks-' . $block['id'];
+$id = 'icon-buttons-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'link-blocks';
+$className = 'icon-buttons';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -25,14 +25,19 @@ if( !empty($block['align']) ) {
 }
 
 // Load values and assign defaults.
-if( have_rows('link_blocks') ): ?>
-	<div class="<?php echo esc_attr($className); ?>" id="<?php echo $id; ?>" data-aos="fade-up">
-		<?php while( have_rows('link_blocks') ): the_row();
+if( have_rows('icon_buttons') ):
+	$count = count(get_field('icon_buttons')); ?>
+	<div class="<?php echo esc_attr($className) . ' count-' . $count ?>" id="<?php echo esc_attr($id); ?>" data-aos="fade-up" style="grid-template-columns:repeat(<?php echo $count ?>,1fr);">
+		<?php while( have_rows('icon_buttons') ): the_row();
 			$link = get_sub_field('link');
-			$image = get_sub_field('image'); ?>
+			$icon = get_sub_field('icon');
+			$color = get_sub_field('color'); ?>
 
-			<a class="link-block" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" style="background-image:url('<?php echo $image; ?>');">
-				<span><?php echo $link['title']; ?></span>
+			<a class="icon-button <?php echo $color; ?>" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
+				<span class="material-symbols-outlined">
+					<?php echo $icon; ?>
+				</span>
+				<h3><?php echo $link['title']; ?></h3>
 			</a>
 		<?php endwhile; ?>
 	</div> <!-- .quote-slider -->

@@ -63,7 +63,7 @@ function load_custom_wp_admin_style() {
     wp_register_style( 'custom-admin', get_template_directory_uri() . '/inc/admin/custom-admin.css', false, null );
     wp_enqueue_style( 'custom-admin' );
     // Google icons
-    wp_enqueue_style( 'google-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons+Outlined', array(), null, 'all' );
+    wp_enqueue_style( 'google-icons', 'https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined', array(), null, 'all' );
 }
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
 

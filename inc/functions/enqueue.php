@@ -32,7 +32,7 @@ function csu_scripts() {
 	// wp_enqueue_style( 'flickity', get_template_directory_uri() . '/inc/plugins/slick/slick.css', array(), null, 'all' );
 
 	// Google Icons
-	wp_enqueue_style( 'google-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons+Outlined', array(), null, 'all' );
+	wp_enqueue_style( 'google-icons', 'https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined', array(), null, 'all' );
 
 
 	/**

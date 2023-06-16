@@ -1,0 +1,64 @@
+.icon-buttons {
+	@include inner;
+	display: grid;
+	grid-gap: 1.5rem;
+
+	&.count-2 {
+		@include inner(750px);
+	}
+
+	&.count-1 {
+		@include inner(400px);
+	}
+
+	.icon-button {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0.5rem;
+		padding: 1rem 1.5rem;
+		text-align: center;
+		text-decoration: none;
+		box-shadow: 0px 0.5rem 1rem rgba(black, 0.5);
+		transition: all 0.2s;
+
+		&:hover, &:focus {
+			transform: translateY(-3px);
+			box-shadow: 0px 1rem 1.5rem rgba(black, 0.3);
+			transition: all 0.2s;
+		}
+
+		&:focus-within {
+			outline: 2px solid $canyon;
+			outline-color: $canyon;
+		}
+
+		&.white {
+
+			background: rgba(white, 0.7);
+			
+			h3 {
+				color: $csu;
+			}
+		}
+
+		&.green {
+			background: rgba($csu, 0.7);
+
+			h3 {
+				color: white;
+			}
+		}
+
+		h3 {
+			font-family: 'industry-demi';
+			margin: 0;
+		}
+
+		.material-symbols-outlined {
+			color: $canyon;
+			font-size: 3em;
+		}
+	}
+}
