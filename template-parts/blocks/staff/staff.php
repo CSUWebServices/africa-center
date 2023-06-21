@@ -46,7 +46,7 @@ $query = new WP_query($args);
 if( $query->have_posts() ) { ?>
     <div class="wp-block-staff">
         <?php if( $category_title ) { ?>
-            <h2 class="section-title"><?php echo $category_title; ?></h2>
+            <h3 class="section-title"><?php echo $category_title; ?></h3>
         <?php } ?>
     	<div class="staff-list grid" data-aos="fade-up">
     		<?php while ( $query->have_posts() ) : $query->the_post();
@@ -55,7 +55,9 @@ if( $query->have_posts() ) { ?>
 
                 $image = get_the_post_thumbnail( $id, 'large' ); 
                 $thumbnail_id = get_post_thumbnail_id( $post->ID );
+                $image_url = get_the_post_thumbnail_url( $id );
                 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                $link = get_permalink( $id );
                 $title = get_the_title($id);
                 $job_title = get_field('job_title', $id);
                 $office = get_field('office', $id);
@@ -65,24 +67,18 @@ if( $query->have_posts() ) { ?>
                 $department = get_field('department', $id); ?>
 
         		<div class="staff-card" href="<?php echo $permalink; ?>">
-                    <?php if($image) {
-                        // <img src="" alt="">
-                        echo $image;
-                    } else { ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/inc/logos/ramhead.png" alt="">
-                    <?php } ?>
-                    <?php if($department) { ?>
-                        <p class="staff-department"><?php echo $department; ?></p>
-                    <?php } ?>
-                    <h3 class="staff-name"><?php echo $title; ?></h3>
+
+                    <a href="<?php echo $link; ?>">
+                        <?php if($image) { ?>
+                            <div class="staff-image" style="background-image:url('<?php echo $image_url; ?>');"></div>
+                        <?php } else { ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/inc/logos/ramhead.png" alt="">
+                        <?php } ?>
+                        <h3 class="staff-name"><?php echo $title; ?></h3>
+                    </a>
+
                     <?php if($job_title) { ?>
                         <p class="job-title"><?php echo $job_title; ?></p>
-                    <?php } ?>
-                    <?php if($office) { ?>
-                        <p class="staff-office"><?php echo $office; ?></p>
-                    <?php } ?>
-                    <?php if($phone) { ?>
-                        <a class="staff-phone" href="tel:<?php echo $phoneNumber; ?>"><?php echo $phone; ?></a>
                     <?php } ?>
                     <?php if($email) { ?>
                         <a class="staff-email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>

@@ -1,10 +1,21 @@
 .icon-buttons {
-	@include inner;
 	display: grid;
 	grid-gap: 1.5rem;
 
+	&.count-3 {
+		@include inner;
+
+		@media #{$small} {
+			grid-template-columns: repeat(1, 1fr)!important;
+		}
+	}
+
 	&.count-2 {
 		@include inner(750px);
+
+		@media #{$xs} {
+			grid-template-columns: repeat(1, 1fr)!important;
+		}
 	}
 
 	&.count-1 {

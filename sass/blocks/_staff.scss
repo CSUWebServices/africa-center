@@ -1,9 +1,11 @@
 .wp-block-staff {
-	padding: 3rem 0;
+	margin: 3rem 0;
 
 	.section-title {
 		margin-top: 0;
 		margin-bottom: 1.5em;
+		color: $canyon;
+		font-family: 'industry-demi';
 	}
 }
 
@@ -26,10 +28,19 @@
 }
 
 .staff-card {
+	text-align: center;
 
 	img {
-		border-radius: 50%;
 		width: calc(200% / 3);
+		border-radius: 50%;
+	}
+
+	.staff-image {
+		width: 100%;
+		border-radius: 50%;
+		aspect-ratio: 1 / 1;
+		background-position: center;
+		background-size: cover;
 	}
 
 	h3, p {

@@ -48,7 +48,9 @@ if( have_rows('expanding_panels') ): ?>
         			</div> <!-- .panel-description -->
 	        		<div class="panel-title">
 		        		<h3 class="<?php echo 'divider-' . $color; ?>"><?php echo $title; ?></h3>
-		        		<span class="learn-more">Learn More <span class="material-icons">arrow_right_alt</span></span>
+						<?php if($link !== '#'): ?>
+		        			<span class="learn-more">Learn More <span class="material-icons">arrow_right_alt</span></span>
+						<?php endif; ?>
 	        		</div> <!-- .panel-title -->
 	        	</a>
 	        </li> <!-- .single-panel -->

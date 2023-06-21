@@ -35,7 +35,7 @@ function staff_post_type() {
 		'label'                 => 'Staff Member',
 		'description'           => 'Post Type Description',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'excerpt' ),
 		'taxonomies'            => array( 'staff-category' ),
 		'hierarchical'          => false,
 		'public'                => true,

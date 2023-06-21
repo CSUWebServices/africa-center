@@ -62,6 +62,10 @@ if( !empty($block['align']) ) {
 
 				<?php }
 			echo '</div>';
+
+			echo '<div class="more-recipients text-link">';
+				echo '<a href="/fellowship-recipients/">View All Recipients</a>';
+			echo '</div>';
 		} else {
 			// no posts found
 		}

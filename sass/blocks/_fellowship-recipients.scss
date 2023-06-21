@@ -30,6 +30,15 @@
 			}
 		}
 	}
+
+	.more-recipients {
+		margin: 1.5rem 0;
+
+		a {
+			@include proxsemi;
+			font-size: 1.2rem;
+		}
+	}
 }
 
 .recipient-link {

@@ -81,7 +81,7 @@
 			// width: calc(100% / 3);
 			// min-width: 25%;
 			flex-shrink: 1;
-			transition: width .75s ease,min-width .75s ease;
+			transition: width .5s ease,min-width .5s ease;
 			will-change: width,min-width;
 
 			.expanding-panel-cover {
@@ -92,7 +92,7 @@
 				right: 0;
 				display: block;
 				opacity: 1;
-				transition: opacity .75s ease-in-out;
+				transition: opacity .5s ease-in-out;
 				will-change: opacity;
 
 				img {
@@ -203,7 +203,7 @@
 			    // Panel title
 			    h3, .learn-more {
 			    	transform: translateY(3rem);
-			    	transition: transform .75s ease-in-out;
+			    	transition: transform .5s ease-in-out;
 			    	will-change: transform;
 			    }
 
@@ -214,7 +214,7 @@
 			    	align-items: center;
 			    	text-transform: uppercase;
 			    	opacity: 0;
-			    	transition: opacity .75s ease-in-out,transform .75s ease-in-out;
+			    	transition: opacity .5s ease-in-out,transform .5s ease-in-out;
 			    	will-change: opacity, transform;
 			    }
 
@@ -224,7 +224,7 @@
 			    	margin-bottom: 1rem;
 			    	opacity: 0;
 			    	visibility: hidden;
-			    	transition: opacity .75s ease-in-out;
+			    	transition: opacity .5s ease-in-out;
 
 			    	p {
 			    		margin: 0;
@@ -251,13 +251,13 @@
 				// Panel text
 				h3, .learn-more {
 					transform: translateY(0);
-					transition: transform .75s ease-in-out;
+					transition: transform .5s ease-in-out;
 					will-change: transform;
 				}
 
 				.learn-more {
 					opacity: 1;
-					transition: opacity .75s ease-in-out,transform .75s ease-in-out;
+					transition: opacity .5s ease-in-out,transform .5s ease-in-out;
 				}
 
 				// Panel description 
@@ -265,8 +265,8 @@
 					opacity: 1;
 					visibility: visible;
 					// border-radius: 0.5rem;
-					transition: opacity .75s ease-in-out;
-					transition-delay: .5s;
+					transition: opacity .5s ease-in-out;
+					transition-delay: .25s;
 				}
 			}
 		}
@@ -323,8 +323,8 @@
 			flex-direction: column;
 
 			li {
-				width: 100%;
-				min-width: 100%;
+				width: 100%!important;
+				min-width: 100%!important;
 
 				&:hover, &:focus-within {
 					width: 100%;

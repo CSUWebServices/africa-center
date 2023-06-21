@@ -79,7 +79,6 @@
 	.small-title {
 		position: relative;
 		display: inline-block;
-		text-transform: uppercase;
 		@include proxsemi;
 		margin-bottom: 0;
 		margin-top: 0.5rem;
@@ -354,7 +353,7 @@
 
 
 //***** Fellowship Recipients Single *****
-.fellowship_recipient {
+.fellowship_recipient, .staff {
 	@include inner;
 	@include section-margin;
 	display: grid;
@@ -434,6 +433,10 @@
 
 .inner-padding {
 
+}
+
+.inner {
+	@include inner;
 }
 
 
