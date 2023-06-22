@@ -126,8 +126,11 @@ add_filter( 'map_meta_cap', 'csu_add_unfiltered_html_capability_to_editors', 1, 
 // Change archive titles
 add_filter( 'get_the_archive_title', function( $title ) {
    if ( is_home() ) {
+      // Rename the blog homepage
        $title = 'News';
+   } elseif ( is_category() ) {
+      // Remove 'Category:' from archives
+      $title = single_cat_title( '', false );
    }
-
    return $title;
 }, 50 );
