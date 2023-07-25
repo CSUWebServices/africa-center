@@ -3651,14 +3651,6 @@
       "oAP" : "\/template-parts\/blocks\/link-grid\/link-grid.php",
       "oF" : 0
     },
-    "\/template-parts\/blocks\/passions\/passions-select.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/passions\/passions-select.php",
-      "oF" : 0
-    },
     "\/template-parts\/blocks\/posts\/posts.php" : {
       "cB" : 0,
       "ft" : 8192,

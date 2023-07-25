@@ -30,7 +30,7 @@ if( !empty($block['align']) ) {
 		$args = array(
 			'post_type'      => 'fellowship_recipient',
 			'posts_per_page' => 4,
-			'nopaging'       => true
+			// 'nopaging'       => true
 		);
 
 		// The Query

@@ -89,3 +89,6 @@ if( $query->have_posts() ) { ?>
     	</div> <!-- .staff-list -->
     </div> <!-- .wp-block-staff -->
 <?php }
+
+/* Restore original Post Data */
+wp_reset_postdata();
