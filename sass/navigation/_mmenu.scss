@@ -20,6 +20,23 @@
 		border-color: white;
 	}
 
+	.mm-listitem {
+
+		>span {
+			-webkit-box-flex: 1;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			-ms-flex-preferred-size: 10%;
+			flex-basis: 10%;
+			display: block;
+			padding: calc((var(--mm-listitem-size) - var(--mm-lineheight))/ 2) 20px;
+			-o-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	}
+
 	.mm-btn--next:after, .mm-btn--prev:before {
 		border-color: white!important;
 	}

@@ -21,8 +21,6 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'csu' ); ?></a>
 
-	<?php get_template_part( 'template-parts/global', 'nav' ); ?>
-
 	<header id="masthead" class="site-header" role="banner">
 		<div class="top-header">
 			<div class="site-branding">
