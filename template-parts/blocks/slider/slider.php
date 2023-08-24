@@ -51,7 +51,7 @@ if( have_rows('slider') ): ?>
 							echo '<p>' . $text . '</p>';
 						} ?>
 
-						<?php if( $link ) {
+						<?php if( $link_url ) {
 							echo '<a class="button" href="' . $link_url . '" target="' . $link_target . '">' . $link_title . '</a>';
 						} ?>
 

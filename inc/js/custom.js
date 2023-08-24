@@ -112,6 +112,42 @@
 	// $(document).ready(contentHeight);
 	// $(window).resize(contentHeight);
 
+	//********** Link accessibility **********
+	// Check if link is external
+	// If it is, add external link icon and screen reader text
+	function link_is_external(link_element) {
+		return (link_element.host !== window.location.host);
+	}
+
+	$('.page .entry-content a, .menu a').each(function() {
+		if (link_is_external(this)) {
+			// External
+			$(this).addClass('external');
+			this.insertAdjacentHTML('beforeend', '<span class="material-symbols-outlined external-icon" aria-hidden="true">open_in_new</span><span class="screen-reader-text">(link is external)</span>');
+		}
+	});
+
+	// Check if link opens in new tab
+	// If it does, add noopener and screen reader text
+	function addNoOpener(link) {
+		let linkTypes = (link.getAttribute('rel') || '').split(' ');
+		if (!linkTypes.includes('noopener')) {
+			linkTypes.push('noopener');
+		}
+		link.setAttribute('rel', linkTypes.join(' ').trim());
+	}
+
+	function addNewTabMessage(link) {
+		if (!link.querySelector('.screen-reader-text')) {
+			link.insertAdjacentHTML('beforeend', '<span class="screen-reader-text">(opens in a new tab)</span>');
+		}
+	}
+
+	document.querySelectorAll('a[target="_blank"]').forEach(link => {
+		addNoOpener(link);
+		addNewTabMessage(link);
+	});
+
 })(jQuery);
 
 // Mobile navigation

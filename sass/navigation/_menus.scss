@@ -125,7 +125,9 @@
 
 	a {
 		color: $csu;
-		display: inline-block;
+		// updated to inline-flex to accommodate external link icon styles
+		// display: inline-block;
+		display: inline-flex;
 		text-decoration: none;
 		position: relative;
 		text-transform: uppercase;
