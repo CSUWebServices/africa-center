@@ -7,33 +7,57 @@
 	}
 
 	.gform_fields {
+		// display: flex!important;
+		// align-items: center;
+	}
+
+	form {
 		display: flex!important;
 		align-items: center;
 	}
 
-	.gfield--type-email {
+	.gform_body {
+		flex-shrink: 1;
+	}
+
+	.email-signup {
 		width: 100%;
 		flex-shrink: 1;
+		margin-top: 0!important;
+
+		.ginput_container {
+			margin-top: 0!important;
+		}
 
 		#input_1_1 {
 			background: rgba(white, 0.6);
 			border-radius: 0.5rem;
+			margin-top: 0;
 		}
 	}
 
-	.gfield--type-submit {
+	// .gfield--type-submit {
+	.gform_footer {
 		display: inline-block;
 		flex-shrink: 0;
 
-		input[type="submit"] {
+		input[type="submit"], .gform_button {
 			padding: .5em 0.5em .3em;
 			letter-spacing: 0;
 			border-radius: 0.5rem;
+			margin-right: 0!important;
+			font-size: 1.2em!important;
 
 			&:focus-within {
 				border-color: white;
 				outline-color: white;
 			}
 		}
+	}
+
+	.gform_wrapper .gform_footer {
+		margin: 0;
+		padding: 0;
+		width: auto;
 	}
 }
