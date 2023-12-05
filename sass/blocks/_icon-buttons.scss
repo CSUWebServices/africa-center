@@ -2,16 +2,22 @@
 	display: grid;
 	grid-gap: 1.5rem;
 
-	&.count-3 {
+	&[class*="count-"] {
 		@include inner;
+		grid-template-columns: repeat(3, 1fr);
 
 		@media #{$small} {
 			grid-template-columns: repeat(1, 1fr)!important;
 		}
 	}
 
+	&.count-3 {
+		@include inner;
+	}
+
 	&.count-2 {
 		@include inner(750px);
+		grid-template-columns: repeat(2, 1fr);
 
 		@media #{$xs} {
 			grid-template-columns: repeat(1, 1fr)!important;
@@ -20,6 +26,7 @@
 
 	&.count-1 {
 		@include inner(400px);
+		grid-template-columns: repeat(1, 1fr);
 	}
 
 	.icon-button {
@@ -65,6 +72,10 @@
 		h3 {
 			font-family: 'industry-demi';
 			margin: 0;
+
+			@media #{$medium} {
+				font-size: 1.2em;
+			}
 		}
 
 		.material-symbols-outlined {

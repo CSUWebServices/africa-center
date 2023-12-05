@@ -33,7 +33,7 @@ if( have_rows('slider') ): ?>
 
 			$image = get_sub_field('image');
 			$title = get_sub_field('title');
-			$text = get_sub_field('description');
+			$description = get_sub_field('description');
 			$link = get_sub_field('link');
 			$link_url = $link['url'];
 			$link_title = $link['title'];
@@ -47,11 +47,11 @@ if( have_rows('slider') ): ?>
 							echo '<h2>' . $title . '</h2>';
 						} ?>
 
-						<?php if( $text ) {
-							echo '<p>' . $text . '</p>';
+						<?php if( $description ) {
+							echo '<p>' . $description . '</p>';
 						} ?>
 
-						<?php if( $link_url ) {
+						<?php if( $link ) {
 							echo '<a class="button" href="' . $link_url . '" target="' . $link_target . '">' . $link_title . '</a>';
 						} ?>
 

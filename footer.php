@@ -47,7 +47,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://twitter.com/theafricacenter">
+							<a href="https://twitter.com/csuafricacenter?lang=en">
 							<img src="<?php echo get_stylesheet_directory_uri() . '/inc/icons/twitter.svg'; ?>" alt="twitter icon">
 							</a>
 						</li>

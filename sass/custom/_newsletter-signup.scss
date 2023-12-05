@@ -7,13 +7,13 @@
 	}
 
 	.gform_fields {
-		// display: flex!important;
-		// align-items: center;
+		display: flex!important;
+		align-items: center;
 	}
 
 	form {
-		display: flex!important;
-		align-items: center;
+		// display: flex!important;
+		// align-items: center;
 	}
 
 	.gform_body {
@@ -33,6 +33,14 @@
 			background: rgba(white, 0.6);
 			border-radius: 0.5rem;
 			margin-top: 0;
+		}
+	}
+
+	.gfield--type-submit {
+		flex-shrink: 0;
+
+		input {
+			border-radius: 0.5rem;
 		}
 	}
 

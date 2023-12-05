@@ -27,7 +27,7 @@ if( !empty($block['align']) ) {
 // Load values and assign defaults.
 if( have_rows('icon_buttons') ):
 	$count = count(get_field('icon_buttons')); ?>
-	<div class="<?php echo esc_attr($className) . ' count-' . $count ?>" id="<?php echo esc_attr($id); ?>" data-aos="fade-up" style="grid-template-columns:repeat(<?php echo $count ?>,1fr);">
+	<div class="<?php echo esc_attr($className) . ' count-' . $count ?>" id="<?php echo esc_attr($id); ?>" data-aos="fade-up">
 		<?php while( have_rows('icon_buttons') ): the_row();
 			$link = get_sub_field('link');
 			$icon = get_sub_field('icon');
