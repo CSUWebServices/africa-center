@@ -11,7 +11,7 @@ cite {
 }
 
 blockquote {
-	@include proxsemi;
+	@include poppinssemi;
 	font-size: 1.2em;
 	padding-left: 1.5em;
 	position: relative;
@@ -62,7 +62,7 @@ big {
 }
 
 strong {
-	@include proxbold;
+	@include poppinsbold;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

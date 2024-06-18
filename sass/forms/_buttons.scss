@@ -5,7 +5,7 @@ input[type="submit"],
 .button,
 .elementor-button,
 .wp-block-button__link {
-	@include proxsemi;
+	@include poppinssemi;
 	border: none;
 	border-radius: 0;
 	background: $color__background-button;

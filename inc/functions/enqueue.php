@@ -31,6 +31,9 @@ function csu_scripts() {
 	// Slick
 	// wp_enqueue_style( 'flickity', get_template_directory_uri() . '/inc/plugins/slick/slick.css', array(), null, 'all' );
 
+	// Poppins
+	wp_enqueue_style( 'poppins', 'https://static.colostate.edu/fonts/poppins/poppins.css', array(), null, 'all' );
+	
 	// Google Icons
 	wp_enqueue_style( 'google-icons', 'https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined', array(), null, 'all' );
 

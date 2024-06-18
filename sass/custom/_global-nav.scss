@@ -276,7 +276,7 @@
 			text-transform: uppercase;
 			letter-spacing: 1px;
 			outline: none;
-			@include prox;
+			@include poppins;
 
 			@media #{$small} {
 				&:after {
@@ -366,7 +366,7 @@
 			}
 
 			.global-give {
-				@include proxsemi;
+				@include poppinssemi;
 				background: $alfalfa;
 				color: $csu;
 				font-size: 0.9em;
@@ -437,7 +437,7 @@
 // 	flex-direction: column;
 // 	margin-top: 2rem;
 // 	margin-bottom: 2rem;
-// 	@include proxbold;
+// 	@include poppinsbold;
 
 // 	@media #{$small} {
 // 		margin-top: 0;
@@ -448,7 +448,7 @@
 // 		margin-bottom: 0.5rem;
 // 		// margin-top: 1rem;
 // 		text-align: center;
-// 		@include proxsemi;
+// 		@include poppinssemi;
 
 // 		a {
 // 			color: $csu;
@@ -459,7 +459,7 @@
 // 		display: flex;
 // 		justify-content: space-between;
 // 		flex-wrap: wrap;
-// 		@include proxsemi;
+// 		@include poppinssemi;
 // 		margin-top: 0.5rem;
 
 // 		a {
@@ -535,7 +535,7 @@
 	}
 
 	span {
-		@include proxsemi;
+		@include poppinssemi;
 		font-size: 0.9rem;
 		padding-top: 0.3rem;
 		text-transform: uppercase;

@@ -1,120 +1,38 @@
-//Proxima Nova light
-@font-face {
-    font-family: 'prox-light';
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.eot');
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.woff2') format('woff2'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.woff') format('woff'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.ttf') format('truetype'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_light_macroman/ProximaNova-Light-webfont.svg#clio_c_lightlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Poppins */
 
-//Proxima Nova regular
-@font-face {
-    font-family: 'prox-regular';
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.eot');
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.woff2') format('woff2'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.woff') format('woff'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_regular_macroman/ProximaNova-Reg-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-//Proxima Nova semibold
-@font-face {
-    font-family: 'prox-semibold';
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.eot');
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.woff2') format('woff2'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.woff') format('woff'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.ttf') format('truetype');
-    font-weight: regular;
-    font-style: normal;
-}
-
-//Proxima Nova extra bold
-@font-face {
-    font-family: 'prox-extra-bold';
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.eot');
-    src: url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.woff2') format('woff2'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.woff') format('woff'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.ttf') format('truetype'),
-        url('//static.colostate.edu/fonts/proxima-nova/proximanova_extrabold_macroman/ProximaNova-Xbold-webfont.svg#clio_c_boldbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@mixin proxlight {
-    font-family: 'prox-light', sans-serif;
+@mixin poppins {
+    font-family: 'poppins', arial, sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin prox {
-    font-family: 'prox-regular', sans-serif;
+@mixin poppinslight {
+    font-family: 'poppins', arial, sans-serif;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin proxsemi {
-    font-family: 'prox-semibold', sans-serif;
+@mixin poppinssemi {
+    font-family: 'poppins', arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 600;
 }
 
-@mixin proxbold {
-    font-family: 'prox-extrabold', sans-serif;
-    font-weight: bold;
+@mixin poppinsbold {
+    font-family: 'poppins', arial, sans-serif;
+    font-weight: 700;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-
-/*Elena Regular*/
-@font-face {
-    font-family: 'elena-web';
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegular.eot');
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegular.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*Elena Italic*/
-@font-face {
-    font-family: 'elena-web';
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegularItalic.eot');
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/elena/ElenaWebBasicRegularItalic.woff') format('woff');
-    font-weight: normal;
+@mixin poppinsitalic {
+    font-family: 'poppins', arial, sans-serif;
     font-style: italic;
-}
-
-/*Elena Bold*/
-@font-face {
-    font-family: 'elena-web';
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBold.eot');
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBold.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/elena/ElenaWebBasicBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/*Elena Bold-Italic*/
-@font-face {
-    font-family: 'elena-web';
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBoldItalic.eot');
-    src: url('//static.colostate.edu/fonts/elena/ElenaWebBasicBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('//static.colostate.edu/fonts/elena/ElenaWebBasicBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-@mixin elena {
-    font-family: 'elena-web', serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 

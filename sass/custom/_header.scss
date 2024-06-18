@@ -50,7 +50,7 @@
 			color: white;
 			text-decoration: none;
 			text-transform: uppercase;
-			font-family: 'prox-light';
+			@include poppinslight;
 			display: flex;
 			align-items: center;
 
@@ -118,7 +118,7 @@
 }
 
 .site-title {
-	@include prox;
+	@include poppins;
 	color: white;
 	margin: 0;
 	text-transform: uppercase;
